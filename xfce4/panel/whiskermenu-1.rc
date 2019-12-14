@@ -1,0 +1,68 @@
+favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,firefox.desktop,cherrytree.desktop,org.gnome.Calculator.desktop,filezilla.desktop,trello.desktop,freemind.desktop,gimp.desktop,org.kde.kdenlive.desktop,mousepad.desktop,libreoffice-calc.desktop,libreoffice-impress.desktop,libreoffice-writer.desktop,obs.desktop,veracrypt.desktop,pidgin.desktop,xfce4-screenshooter.desktop,Joxi.desktop
+recent=mousepad.desktop,xfce-keyboard-settings.desktop,xfce-wm-settings.desktop,xfce-workspaces-settings.desktop,firefox.desktop,obs.desktop,megasync.desktop,filezilla.desktop
+button-title=Приложения
+button-icon=/usr/share/pixmaps/archlinux_logo.png
+button-single-row=false
+show-button-title=false
+show-button-icon=true
+launcher-show-name=true
+launcher-show-description=true
+launcher-show-tooltip=true
+item-icon-size=2
+hover-switch-category=false
+category-show-name=true
+category-icon-size=1
+load-hierarchy=false
+recent-items-max=10
+favorites-in-recent=true
+display-recent-default=false
+position-search-alternate=true
+position-commands-alternate=false
+position-categories-alternate=false
+menu-width=400
+menu-height=500
+menu-opacity=100
+command-settings=xfce4-settings-manager
+show-command-settings=true
+command-lockscreen=xflock4
+show-command-lockscreen=true
+command-switchuser=gdmflexiserver
+show-command-switchuser=true
+command-logout=xfce4-session-logout
+show-command-logout=true
+command-menueditor=menulibre
+show-command-menueditor=true
+command-profile=mugshot
+show-command-profile=true
+search-actions=5
+
+[action0]
+name=Man-страницы
+pattern=#
+command=exo-open --launch TerminalEmulator man %s
+regex=false
+
+[action1]
+name=Web-поиск
+pattern=?
+command=exo-open --launch WebBrowser https://duckduckgo.com/?q=%u
+regex=false
+
+[action2]
+name=Википедия
+pattern=!w
+command=exo-open --launch WebBrowser https://en.wikipedia.org/wiki/%u
+regex=false
+
+[action3]
+name=Выполнить в терминале
+pattern=!
+command=exo-open --launch TerminalEmulator %s
+regex=false
+
+[action4]
+name=Открыть URI
+pattern=^(file|http|https):\\/\\/(.*)$
+command=exo-open \\0
+regex=true
+

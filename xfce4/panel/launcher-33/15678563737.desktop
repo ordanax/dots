@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Galculator
+Comment=Perform simple and scientific calculations
+Comment[ru]=Вычисления: простые и инженерные
+Exec=galculator
+Icon=galculator
+Terminal=false
+Type=Application
+Categories=Utility;
+StartupNotify=true
+X-XFCE-Source=file:///usr/share/applications/galculator.desktop

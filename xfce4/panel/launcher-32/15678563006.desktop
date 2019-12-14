@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Trello
+Exec=trello
+Terminal=false
+Type=Application
+Icon=trello
+Categories=Network;
+X-XFCE-Source=file:///usr/share/applications/trello.desktop

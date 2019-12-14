@@ -1,0 +1,30 @@
+[Desktop Entry]
+Version=1.0
+Name=Firefox
+GenericName=Web Browser
+GenericName[ru]=Веб-браузер
+Comment=Browse the World Wide Web
+Comment[ru]=Доступ в Интернет
+Keywords=Internet;WWW;Browser;Web;Explorer
+Keywords[ru]=Internet;WWW;Browser;Web;Explorer;интернет;браузер;веб;файрфокс;огнелис
+Exec=/usr/lib/firefox/firefox %u
+Icon=firefox
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;
+StartupNotify=true
+StartupWMClass=firefox
+Categories=Network;WebBrowser;
+Actions=new-window;new-private-window;
+X-XFCE-Source=file:///usr/share/applications/firefox.desktop
+
+[Desktop Action new-window]
+Name=New Window
+Name[ru]=Новое окно
+Exec=/usr/lib/firefox/firefox --new-window %u
+
+[Desktop Action new-private-window]
+Name=New Private Window
+Name[ru]=Новое приватное окно
+Exec=/usr/lib/firefox/firefox --private-window %u

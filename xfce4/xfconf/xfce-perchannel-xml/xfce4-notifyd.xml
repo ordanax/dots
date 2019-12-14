@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-notifyd" version="1.0">
+  <property name="applications" type="empty">
+    <property name="known_applications" type="array">
+      <value type="string" value="chromium"/>
+      <value type="string" value="com.github.wwmm.pulseeffects"/>
+      <value type="string" value="Dropbox"/>
+      <value type="string" value="Electron"/>
+      <value type="string" value="FileZilla"/>
+      <value type="string" value="Firefox"/>
+      <value type="string" value="flameshot"/>
+      <value type="string" value="kalu"/>
+      <value type="string" value="MEGAsync"/>
+      <value type="string" value="nm-applet"/>
+      <value type="string" value="notify-send"/>
+      <value type="string" value="org.gajim.Gajim"/>
+      <value type="string" value="org.kde.kdenlive"/>
+      <value type="string" value="org.manjaro.pamac.installer"/>
+      <value type="string" value="org.manjaro.pamac.manager"/>
+      <value type="string" value="qBittorrent"/>
+      <value type="string" value="signal"/>
+      <value type="string" value="thunar"/>
+      <value type="string" value="Thunar"/>
+      <value type="string" value="thunar-volman"/>
+      <value type="string" value="Thunderbird"/>
+      <value type="string" value="timeshift-gtk"/>
+      <value type="string" value="Xfce volume control"/>
+      <value type="string" value="Xfce4-notifyd settings"/>
+      <value type="string" value="xfce4-power-manager"/>
+      <value type="string" value="xfce4-settings-helper"/>
+      <value type="string" value="xneur"/>
+      <value type="string" value="Менеджер пакетов"/>
+    </property>
+    <property name="muted_applications" type="array">
+    </property>
+  </property>
+  <property name="primary-monitor" type="uint" value="0"/>
+  <property name="notify-location" type="uint" value="2"/>
+  <property name="log-level" type="uint" value="0"/>
+  <property name="log-level-apps" type="uint" value="0"/>
+  <property name="do-slideout" type="bool" value="true"/>
+  <property name="do-fadeout" type="bool" value="true"/>
+  <property name="do-not-disturb" type="bool" value="false"/>
+</channel>

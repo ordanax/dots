@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Todoist
+Comment=Todoist for Linux
+Categories=Office;ProjectManagement
+Exec=/usr/bin/todoist
+Icon=goa-account-todoist
+Path=
+Terminal=false
+StartupNotify=false
+X-XFCE-Source=file:///usr/share/applications/Todoist.desktop

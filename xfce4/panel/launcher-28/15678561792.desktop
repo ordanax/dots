@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=CherryTree
+Comment=Hierarchical Note Taking
+Comment[ru]=Записная книжка с иерархической структурой
+Exec=cherrytree %f
+Icon=cherrytree
+MimeType=application/cherrytree-ctd;application/cherrytree-ctz;application/cherrytree-ctb;application/cherrytree-ctx;
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;
+Keywords=editor;notes;note-taking;
+X-XFCE-Source=file:///usr/share/applications/cherrytree.desktop

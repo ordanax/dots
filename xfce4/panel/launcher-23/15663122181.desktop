@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=VerseQ
+Exec=env WINEPREFIX="/home/ordanax/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/ordanax/.wine/dosdevices/c:/users/ordanax/Start\\ Menu/Programs/VerseQ/VerseQ.lnk
+Type=Application
+StartupNotify=true
+Path=/home/ordanax/.wine/dosdevices/c:/Program Files (x86)/VerseQ/Modules/Languages
+Icon=com.github.hannesschulze.optimizer
+StartupWMClass=verseq.exe
+X-XFCE-Source=file:///home/ordanax/.local/share/applications/wine/Programs/VerseQ/VerseQ.desktop
+Comment=
+Terminal=false
