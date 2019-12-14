@@ -6,7 +6,6 @@ exec --no-startup-id exec compton -b
 exec --no-startup-id xrandr --dpi 100
 exec --no-startup-id flameshot
 exec --no-startup-id xflux -l 54.73  -g 55.97
-exec --no-startup-id megasync
 
 # Отлючение заголовков
 default_border pixel
@@ -14,13 +13,16 @@ default_border pixel
 # Увеличение толщены рамки, чтобы было лучше видно активное окно
 for_window [tiling] border pixel 3
 
-# Автозапуск программ
+# Запуск программ
 bindsym $mod+F1 exec firefox
 bindsym $mod+F3 exec subl
 bindsym $mod+F4 exec cherrytree
-bindsym $mod+F11 exec todoist
-bindsym $mod+F12 exec --no-startup-id cvlc
-bindsym Print exec --no-startup-id flameshot gui
+bindsym $mod+F5 exec galculator
+bindsym $mod+F6 exec todoist
+bindsym $mod+F11 exec cvlc
+bindsym $mod+m exec megasync
+bindsym Print exec flameshot gui
+bindsym Pause exec killall -s 6 vlc todoist megasync
 
 # Горячие клавиши
 bindsym $mod+q kill
@@ -29,13 +31,13 @@ bindsym $mod+t exec thunar
 bindsym $mod+Escape exec shutdown -h now
 bindsym $mod+r exec reboot
 
-# Откртие программ в определенном окне
-for_window [class="todoist"] move to workspace $ws11
-#for_window [class="firefox"] move to workspace $ws2
+# Открытие программ в плавающе окне
+for_window [title="galculator$"] floating enable
+
+# Откртие программ в нужном рабочем столе
 for_window [class="subl"] move to workspace $ws3
 for_window [class="cherrytree"] move to workspace $ws4
-for_window [class="thunar"] move to workspace $10
-
+for_window [class="thunar"] move to workspace $5
 
 font pango:monospace 8
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -81,12 +83,6 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-
-# split in horizontal orientation
-bindsym $mod+h split h
-
-# split in vertical orientation
-bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
