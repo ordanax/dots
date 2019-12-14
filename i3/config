@@ -19,10 +19,10 @@ bindsym $mod+F3 exec subl
 bindsym $mod+F4 exec cherrytree
 bindsym $mod+F5 exec galculator
 bindsym $mod+F6 exec todoist
-bindsym $mod+F11 exec cvlc
 bindsym $mod+m exec megasync
 bindsym Print exec flameshot gui
-bindsym Pause exec killall -s 6 vlc todoist megasync
+bindsym $mod+Prior exec killall -s 6 vlc todoist megasync
+bindsym $mod+Home exec cvlc
 
 # Горячие клавиши
 bindsym $mod+q kill
