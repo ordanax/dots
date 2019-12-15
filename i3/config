@@ -19,6 +19,7 @@ bindsym $mod+F3 exec subl
 bindsym $mod+F4 exec cherrytree
 bindsym $mod+F5 exec galculator
 bindsym $mod+F6 exec todoist
+bindsym $mod+F12 exec pcmanfm
 bindsym $mod+m exec megasync
 bindsym Print exec flameshot gui
 bindsym $mod+Prior exec killall -s 6 vlc todoist megasync
@@ -27,17 +28,16 @@ bindsym $mod+Home exec cvlc
 # Горячие клавиши
 bindsym $mod+q kill
 bindsym $mod+Return exec xfce4-terminal
-bindsym $mod+t exec thunar
 bindsym $mod+Escape exec shutdown -h now
 bindsym $mod+r exec reboot
 
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
+for_window [class="Xfce4-terminal"] floating enable
+for_window [class="Pcmanfm"] floating enable
 
 # Откртие программ в нужном рабочем столе
-for_window [class="subl"] move to workspace $ws3
-for_window [class="cherrytree"] move to workspace $ws4
-for_window [class="thunar"] move to workspace $5
+for_window [class="firefox"] move to workspace $ws3
 
 font pango:monospace 8
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
