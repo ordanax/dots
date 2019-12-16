@@ -24,11 +24,6 @@ order += "memory"
 order += "tztime local"
 order += "volume master"
 
-wireless _first_ {
-        format_up = "%quality %essid"
-        format_down = " down"
-}
-
 battery all {
         format = "%status %percentage %remaining %emptytime"
         format_down = "No battery"
