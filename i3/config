@@ -6,6 +6,7 @@ exec --no-startup-id exec compton -b
 exec --no-startup-id xrandr --dpi 100
 exec --no-startup-id flameshot
 exec --no-startup-id sbxkb
+exec --no-startup-id megasync
 exec --no-startup-id xflux -l 54.73  -g 55.97
 
 # Отлючение заголовков
@@ -16,15 +17,22 @@ for_window [tiling] border pixel 3
 
 # Запуск программ
 bindsym $mod+F1 exec firefox
-bindsym $mod+F3 exec subl
+bindsym $mod+F3 exec subl3
 bindsym $mod+F4 exec cherrytree
 bindsym $mod+F5 exec galculator
-bindsym $mod+F6 exec todoist
 bindsym $mod+F12 exec pcmanfm
-bindsym $mod+m exec megasync
 bindsym Print exec flameshot gui
 bindsym $mod+Prior exec killall -s 6 vlc todoist megasync
 bindsym $mod+Home exec cvlc
+
+# Откртие программ в нужном рабочем столе
+for_window [class="Subl3"] move to workspace $ws3
+for_window [class="Cherrytree"] move to workspace $ws4
+
+# Открытие программ в плавающе окне
+for_window [title="galculator$"] floating enable
+for_window [class="Xfce4-terminal"] floating enable
+for_window [class="Pcmanfm"] floating enable
 
 # Горячие клавиши
 bindsym $mod+q kill
@@ -32,13 +40,19 @@ bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Escape exec shutdown -h now
 bindsym $mod+r exec reboot
 
-# Открытие программ в плавающе окне
-for_window [title="galculator$"] floating enable
-for_window [class="Xfce4-terminal"] floating enable
-for_window [class="Pcmanfm"] floating enable
 
-# Откртие программ в нужном рабочем столе
-for_window [class="firefox"] move to workspace $ws3
+
+# Переключение рабочих столов
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
 
 font pango:monospace 8
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -122,17 +136,6 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-# switch to workspace
-bindsym $mod+1 workspace number $ws1
-bindsym $mod+2 workspace number $ws2
-bindsym $mod+3 workspace number $ws3
-bindsym $mod+4 workspace number $ws4
-bindsym $mod+5 workspace number $ws5
-bindsym $mod+6 workspace number $ws6
-bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
