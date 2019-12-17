@@ -1,38 +1,53 @@
-
+### Назначенная клавиша MOD по умолчанию
 set $mod Mod4
+
+### Автозапуск программ
 exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
 exec --no-startup-id feh --bg-scale /usr/share/backgrounds/xfce/bg.jpg
-exec --no-startup-id exec compton -b
+#exec --no-startup-id exec compton -b
 exec --no-startup-id xrandr --dpi 100
 exec --no-startup-id flameshot
 exec --no-startup-id sbxkb
-exec --no-startup-id megasync
 exec --no-startup-id xflux -l 54.73  -g 55.97
 
 # Отлючение заголовков
 default_border pixel
 
+# Когда открыто одно окно, оно отрывется на весь экран без отступов
+smart_gaps on
+
+# отступы между открытыми окнами
+gaps inner 10
+
+### включает умные рамки, когда открыто одно окно рамки выключаются
+smart_borders on
+
 # Увеличение толщены рамки, чтобы было лучше видно активное окно
 for_window [tiling] border pixel 3
+
+# Убить окно нажав средней кнопкой мыши на титульный заголовок окна
+bindsym --release button2 kill
 
 # Запуск программ
 bindsym $mod+F1 exec firefox
 bindsym $mod+F3 exec subl3
 bindsym $mod+F4 exec cherrytree
 bindsym $mod+F5 exec galculator
-bindsym $mod+F12 exec pcmanfm
+bindsym $mod+F10 exec pcmanfm
 bindsym Print exec flameshot gui
 bindsym $mod+Prior exec killall -s 6 vlc todoist megasync
 bindsym $mod+Home exec cvlc
 
-# Откртие программ в нужном рабочем столе
+### Привязка приложений к конкретным рабочим столам
+assign [class="(?i)opera|firefox"] $ws1
 for_window [class="Subl3"] move to workspace $ws3
 for_window [class="Cherrytree"] move to workspace $ws4
+for_window [class="Pcmanfm"] move to workspace $ws10
 
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
 for_window [class="Xfce4-terminal"] floating enable
-for_window [class="Pcmanfm"] floating enable
+#for_window [class="Pcmanfm"] floating enable
 
 # Горячие клавиши
 bindsym $mod+q kill
@@ -40,7 +55,8 @@ bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Escape exec shutdown -h now
 bindsym $mod+r exec reboot
 
-
+### Убить окно нажав средней кнопкой мыши на титульный заголовок окна
+bindsym --whole-window button2 kill
 
 # Переключение рабочих столов
 bindsym $mod+1 workspace number $ws1
@@ -106,6 +122,7 @@ bindsym $mod+Shift+Right move right
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
+# переключение между режимами отображения, окрытых окон
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
@@ -161,5 +178,19 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bar {
         status_command i3status
         position top
-        font pango:Roboto Regular, Icons 8
+        tray_output none
+        #status_command bash ~/.config/i3/i3script.sh
+        colors {
+   
+    #DEFAULT I3 BAR THEME
+	background #3c3c3c
+	statusline #bbbbbb
+
+	### border backgr text
+	focused_workspace  #4c7899 #285577 #000000
+	active_workspace   #333333 #457DC0 #000000
+	inactive_workspace #333333 #222222 #888888
+	urgent_workspace   #2f343a #900000 #000000
+    
+       } 
 }
