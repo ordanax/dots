@@ -78,9 +78,9 @@ bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 
 ### Cпрятать окно, чтобы оно не мешалось, но в то же время было всегда под рукой. 
-bindsym $mod+Shift+grave move scratchpad
-bindsym $mod+grave scratchpad show, resize set 1100 600, move position center
-
+### Можно добавить несколько окон и переключаться между ними. 
+bindsym $mod+Shift+Tab move scratchpad
+bindsym $mod+Tab scratchpad show, resize set 1366 750, move position center
 
 font pango:monospace 8
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
