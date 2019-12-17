@@ -8,7 +8,7 @@ exec --no-startup-id feh --bg-scale /usr/share/backgrounds/xfce/bg.jpg
 exec --no-startup-id xrandr --dpi 100
 exec --no-startup-id flameshot
 exec --no-startup-id sbxkb
-exec --no-startup-id xflux -l 54.73  -g 55.97
+exec --no-startup-id xflux -l 54.73, -g 55.97 -k 2000
 
 # Отлючение заголовков
 default_border pixel
@@ -17,7 +17,7 @@ default_border pixel
 smart_gaps on
 
 # отступы между открытыми окнами
-gaps inner 10
+gaps inner 5
 
 ### включает умные рамки, когда открыто одно окно рамки выключаются
 smart_borders on
@@ -29,14 +29,15 @@ for_window [tiling] border pixel 3
 bindsym --release button2 kill
 
 # Запуск программ
-bindsym $mod+F1 exec firefox
-bindsym $mod+F3 exec subl3
-bindsym $mod+F4 exec cherrytree
-bindsym $mod+F5 exec galculator
-bindsym $mod+F10 exec pcmanfm
-bindsym Print exec flameshot gui
+bindsym $mod+F1 exec --no-startup-id firefox
+bindsym $mod+F3 exec --no-startup-id subl3
+bindsym $mod+F4 exec --no-startup-id cherrytree
+bindsym $mod+F5 exec --no-startup-id galculator
+bindsym $mod+F10 exec --no-startup-id pcmanfm
+bindsym $mod+m exec --no-startup-id megasync
+bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Prior exec killall -s 6 vlc todoist megasync
-bindsym $mod+Home exec cvlc
+bindsym $mod+Home exec --no-startup-id cvlc
 
 ### Привязка приложений к конкретным рабочим столам
 assign [class="(?i)opera|firefox"] $ws1
