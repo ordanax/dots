@@ -1,71 +1,54 @@
-# i3status configuration file.
-# see "man i3status" for documentation.
-
-# It is important that this file is edited as UTF-8.
-# The following line should contain a sharp s:
-# ß
-# If the above line is not correctly displayed, fix your editor first!
-
 general {
-        colors = true
-        interval = 5
+  output_format = "i3bar"
+  markup = pango
+  colors = true
+  color_good = "#24B396"
+  color_degraded = "#FFD631"
+  color_bad = "#DD5B7E"
+  interval = 2
 }
-
-#order += "ipv6"
-order += "wireless _first_"
-order += "ethernet _first_"
-order += "battery all"
-order += "cpu_temperature 0"
-order += "cpu_usage"
 order += "disk /"
 order += "disk /home"
-#order += "load"
+order += "cpu_temperature 0"
+order += "cpu_usage"
 order += "memory"
 order += "tztime local"
 order += "volume master"
+order += "wireless _first_"
 
-battery all {
-        format = "%status %percentage %remaining %emptytime"
-        format_down = "No battery"
-        status_chr = "⚡"
-        status_bat = ""
-        status_unk = "?"
-        status_full = ""
-        path = "/sys/class/power_supply/BAT%d/uevent"
-        low_threshold = 10
+
+volume master {
+        format = "<span background='#80007e' foreground='#0C0C0C'>  %volume </span>"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
 }
-
-cpu_temperature 0 {
-	format = " %degrees°C"
-}
-
 disk "/" {
-        format = " root %free"
+        format = "<span background='#017872' foreground='#0C0C0C'>  /:%free </span>"
 }
 
 disk "/home" {
-        format = " home %free"
+        format = "<span background='#980000' foreground='#0C0C0C'>  /home:%free </span>"
 }
-
-load {
-        format = "%1min"
+cpu_temperature 0 {
+        format = "<span background='#BD6636' foreground='#0C0C0C'>  TEM:%degrees°C </span>"
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp3_input"
 }
-
+cpu_usage {
+        format = "<span background='#478A38' foreground='#0C0C0C'>  CPU:%usage </span>"
+}
 memory {
-        format = " %used | %available"
-        threshold_degraded = "1G"
-        format_degraded = "MEMORY < %available"
-}
-
+        format = "<span background='#457DC0' foreground='#0C0C0C'>  MEM:%percentage_used </span>"
+        threshold_degraded = "1.4G"
+        format_degraded = "MEM %used"
+}    
 tztime local {
-        format = " %Y-%m-%d  %H:%M:%S"
+		format = "<span background='#4F4FB3' foreground='#0C0C0C' > %time </span>"
+        format_time = " %a %-d %b  %H:%M"  
 }
 
-volume master {
-        format = " %volume"
-        format_muted = ""
-        device = "default"
-        mixer =  "Master"
-        mixer_idx = 0
-        
+wireless _first_ {
+        format_up =   "<span background='#a38500' foreground='#0C0C0C' > %quality </span>"
+        format_down = "<span background='#a38500' foreground='#0C0C0C' >  down </span>"
 }
+
