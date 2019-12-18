@@ -39,6 +39,7 @@ bindsym $mod+m exec --no-startup-id megasync
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Prior exec killall -s 6 vlc todoist megasync
 bindsym $mod+Home exec --no-startup-id cvlc
+bindsym $mod+Menu exec --no-startup-id i3lock-fancy
 
 ### Привязка приложений к конкретным рабочим столам
 assign [class="(?i)opera|firefox"] $ws1
