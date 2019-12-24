@@ -34,7 +34,9 @@ bindsym $mod+F3 exec --no-startup-id subl3
 bindsym $mod+F4 exec --no-startup-id cherrytree
 bindsym $mod+F5 exec --no-startup-id galculator
 bindsym $mod+F6 exec --no-startup-id gimp
-bindsym $mod+F10 exec --no-startup-id pcmanfm
+bindsym $mod+F7 exec --no-startup-id libreoffice --writer
+bindsym $mod+F8 exec --no-startup-id libreoffice --calc
+bindsym $mod+F10 exec --no-startup-id thunar
 bindsym $mod+m exec --no-startup-id megasync
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Prior exec killall -s 6 vlc todoist megasync
@@ -46,16 +48,15 @@ assign [class="(?i)opera|firefox"] $ws1
 for_window [class="Subl3"] move to workspace $ws3
 for_window [class="Cherrytree"] move to workspace $ws4
 for_window [class="Gimp"] move to workspace $ws6
-for_window [class="Pcmanfm"] move to workspace $ws10
+#for_window [class="Thunar"] move to workspace $ws10
 
 ### Переключение на рабочий стол в автомате в важном открытом окне
-for_window [urgent="latest"] focus
 focus_on_window_activation focus
+for_window [urgent="latest"] focus
 
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
 for_window [class="Xfce4-terminal"] floating enable
-#for_window [class="Pcmanfm"] floating enable
 
 # Горячие клавиши
 bindsym $mod+q kill
