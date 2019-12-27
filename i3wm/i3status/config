@@ -5,7 +5,7 @@ general {
   color_good = "#24B396"
   color_degraded = "#FFD631"
   color_bad = "#DD5B7E"
-  interval = 2
+  interval = 2 
 }
 order += "disk /"
 order += "disk /home"
@@ -16,13 +16,11 @@ order += "tztime local"
 order += "volume master"
 order += "wireless _first_"
 
-
 disk "/" {
         format = "<span background='#081c27' foreground='#017872'></span><span background='#017872' foreground='#0C0C0C'>  /:%free </span>"
         separator = false
         separator_block_width = 0
 }
-
 disk "/home" {
         format = "<span background='#017872' foreground='#980000'></span><span background='#980000' foreground='#0C0C0C'>  /home:%free </span>"
         separator = false
@@ -62,7 +60,7 @@ volume master {
 }
 wireless _first_ {
         format_up =   "<span background='#80007e' foreground='#457DC0'></span><span background='#457DC0' foreground='#0C0C0C' > %quality </span>"
-        format_down = "<span background='#80007e' foreground='#a38500'></span><span background='#BD6636' foreground='#0C0C0C' >  down </span>"
+        format_down = "<span background='#80007e' foreground='#980000'></span><span background='#980000' foreground='#0C0C0C' >  down </span>"
         separator = false
         separator_block_width = 0
 }
