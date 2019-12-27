@@ -4,7 +4,7 @@ set $mod Mod4
 ### Автозапуск программ
 exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
 exec --no-startup-id feh --bg-scale /usr/share/backgrounds/xfce/bg.jpg
-#exec --no-startup-id exec compton -b
+exec --no-startup-id exec compton -b
 exec --no-startup-id xrandr --dpi 100
 exec --no-startup-id flameshot
 exec --no-startup-id sbxkb
@@ -43,6 +43,9 @@ bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Prior exec killall -s 6 vlc todoist megasync
 bindsym $mod+Home exec --no-startup-id cvlc
 bindsym $mod+Menu exec --no-startup-id i3lock-fancy
+
+### Перекидывает открытое окно на нужный рабочий стол
+for_window [class="Vlc"] move to workspace $ws9
 
 ### Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
