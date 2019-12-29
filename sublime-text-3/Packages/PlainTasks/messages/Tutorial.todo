@@ -1,0 +1,142 @@
+How to Use PlainTasks:
+
+Projects:
+ ☐ Anything with colon at the end of the line is a project title
+ ☐ Projects can be nested inside each other
+ ☐ Projects can be folded (a built-in editor feature)
+
+Tasks:
+  You can write plain text as _notes_ or descriptions wherever you want;
+  It’s **totally** fine!
+  New:
+   ☐ ⌘+enter (ctrl+enter on Windows) adds a new task.
+   ☐ ⌘+i (ctrl+i on Windows) also adds a new task
+   ☐ If you’re on a new line PlainTasks creates a new task on the current line
+   ☐ If you’re on a line with a task pressing new task shortcut adds a task after it
+   ☐ If you’re on a line with some normal text pressing new task shortcut converts it to a task
+   ☐ New tasks are nested as much as the task on the previous line
+  Done:
+   ☐ ⌘+d (ctrl+d on Windows) marks a task as done
+   ☐ Pressing ⌘+d (ctrl+d on Windows) again puts it back in pending mode
+   ☐ ctrl+c (alt+c on Windows) marks the task as cancelled
+  Tagging:
+   ☐ You can add tags using @ sign, like this @tag
+     You can place cursors on tags, click right mouse button and **Filter by tags under cursors**
+     Pending tasks with selected tags will remain visible (and their notes and projects they belong to),
+     but everything else will be hidden/folded
+     To unfold all press ⌘+k, ⌘+j or ⌘+k, ⌘+0
+   ☐ You can navigate tags in current document via ⌘+shift+r (ctrl+shift+r on Windows)
+  URLs:
+   ☐ ⌘+shift+U (ctrl+shift+U on Windows) opens the URL under the cursor in your default browser
+     www.github.com or <skype:nickname>
+  File links:
+   ☐ You can create a link to a file by prefixing the file name with a dot and (back)slash sign
+     like: .\filename\ or ./another filename/
+     It supports only one filename per line
+     Filename can be absolute path or relative one (to project folder(s) or to open files)
+   ☐ The line and column numbers can be specified by colons after the filename: .\filename:11:8
+   ☐ In SublimeText 3 you can specify a symbol inside the file by using > character like: .\filename>symbol
+   ☐ In SublimeText 2 you can specify a text inside that file by using double quotes like: .\filename"any text"
+   ☐ ctrl+o (alt+o on Windows) opens the file in Sublime: try to open .\install.txt\
+   ☐ In SublimeText 3 link may point to directory, open such link will add the directory to current project (sidebar), e.g. .\..\PlainTasks\
+   ☐ Other ways to create file links:
+      [](install.txt)  ← try to open it
+      [](path ":11:8")
+      [](path ">symbol")
+      [](path "any text")
+      [[..\PlainTasks.py]]  ← try to open it
+      [[path::11:8]]
+      [[path::*symbol]]
+      [[path::any text]]
+      [[path]] ":11:8"
+      [[path]] ">symbol"
+      [[path]] "any text"
+
+  Archiving:
+   ☐ ⌘+shift+A (ctrl+shift+A on Windows) archives tasks in done mode.
+      It does it by removing them from your list and appending them to the bottom of the file under Archive project.
+      The archive project is separated from the other list of projects with a line. See bottom of this file.
+   ☐ ⌘+shift+O (ctrl+shift+O) will archive in Org-Mode style.
+      Removing the entire subtree after cursor and appending it to new file next to original one,
+      e.g. filename.TODO → filename_archive.TODO
+
+  Starting a new todo-list:
+   ☐ Bring up the command palette (it's ⌘+shift+p in Mac and ctrl+shift+p in Windows)
+   ☐ type `task` and select `Tasks: New document` command
+
+--- ✄ -----------------------
+You can use separator snippet to separate your todo lists, type -- and press tab
+
+Priority:
+  ☐ type c, press tab key — it’ll become @critical
+  ☐ type h, press tab key — it’ll become @high
+  ☐ type l, press tab key — it’ll become @low
+  ☐ type t, press tab key — it’ll become @today
+
+Time Tracking:
+  ☐ type s, press tab key twice — it’ll become @started(13-10-25 15:20)
+    You’ll get a current date and time; When a task with such tag is completed/cancelled,
+    PlainTasks will calculate the time spent on that task and append it to the archived task.
+    You can recalculate it for already completed/cancelled task: put cursor at tag and press tab key
+  ☐ type tg, press tab key twice — @toggle(14-10-13 16:14)
+    That way you can pause and resume started task, so result of calculation will be more correct.
+    First, you need start task, then toggle means pause, next toggle — resume, etc.
+  ☐ type cr, press tab key twice — @created(14-12-24 15:57)
+    ⌘+shift+enter (ctrl+shift+enter) creates a new task with this tag
+  ☐ type d, press tab key — @due( )
+    If you press tab key again — it’ll insert current date, same for @due( 0).
+    You can type short date and then press tab to expand it into default format.
+    Short date should be __@due(year-month-day hour:minute)__
+    Dot can be used instead of hyphen, but should be consistent _year.month.day_
+      - year, month, minute, hour can be omitted:
+        - @due(1)          → 1st day of next month always
+        - @due(--1)         → 1st day of current month always
+        - @due(5)          → 5th day of current month (or next month if current day is 5th or older)
+        - @due(2-3)        → February 3rd of current year or next one
+        - @due(28 23:)     → 28th day of current/next month at 23 hours and minutes are equal to current moment
+        - @due(16.1.1 1:1) → January 1st of 2016 at 01:01 @due(16-01-01 01:01)
+      - relative period of time starts with a plus sign or two
+        __+[+][number][DdWw][h:m]__ — number is optional as well as letter d for days or letter w for weeks
+        - @due(+)   → tomorrow as well as @due( +1) or @due( +1d)
+        - @due(+w)  = @due( +7)
+        - @due(+3w) = @due( +21d)
+        - @due(++)  → count time since date of creation if task contains @created(date), otherwise it is equal to @due(+)
+        - @due(+2:)    = @due( +2.)    →  two hours since current date
+        - @due(+:555)  = @due( +.555)  →  555 minutes since current date
+        - @due(+2 12:) = @due( +2 12.) →  2 days and 12 hours since current date
+
+    You probably notice that due tags looks unusual, past (overdue or expired) and those due soon
+    (in next 24 hours by default) are dynamically highlighted depending on system time;
+    You can search 'Tasks: Fold to due tasks' in command palette to fold/hide everything except
+    pending tasks with past or soon due tag, their notes, and projects or separators they belong to.
+
+☐ ctrl+space (alt+/ on Linux) shows list of those tags
+
+FileType Support:
+ PlainTasks support these file types out of the box
+ ☐ TODO
+ ☐ *.todo
+ ☐ *.todolist
+ ☐ *.taskpaper
+ ☐ *.tasks
+
+You can customize:
+ ☐ New and done bullets
+ ☐ List of file-types that should be considered todo lists
+ ☐ Key-bindings if you don’t like the default ones
+ ☐ Date formatting for done tasks
+ ☐ Colour scheme
+ ☐ Statistics appearance
+ ☐ Icon for file-type
+ ☐ and more
+ See the Readme file on github on how to do these customizations. https://github.com/aziz/PlainTasks
+ or in Sublime ./../Readme.md"## Settings"
+
+Editor Useful Tools:
+ ☐ Use ⌘+control+up/down (ctrl+shift+up/down on Windows) to move tasks up and down.
+ ☐ Use ⌘+R (ctrl+R on Windows) to see a list of projects and quickly jump between them
+ ☐ F6 toggles spell check
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+ ✔ learn how to use PlainTasks @done (12-09-07 07:30)

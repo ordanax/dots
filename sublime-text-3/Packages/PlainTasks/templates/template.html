@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>$title</title>
+<style type="text/css">
+ * {
+  margin:0; padding:0;
+ }
+ span { display: inline-block; }         /* prevent unsupposed empty lines */
+ span[class|="tag"] { display: inline; } /* add proper wrapping for tags */
+ pre {
+  margin: 30px;
+  font-family: "Consolas", "Monaco", monospace;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 20px;
+  white-space: pre-wrap;
+ }
+ .empty-line {
+  /* span, either empty or containing whitespaces/tabs */
+ }
+ $css
+</style>
+</head>
+<body>
+<pre>
+$content
+</pre>
+</body></html>
