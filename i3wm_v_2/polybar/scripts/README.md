@@ -23,7 +23,7 @@
 KEY=""
 CITY=""
 UNITS="metric"
-SYMBOL="°"
+SYMBOL="°C"
 ```
 
 
