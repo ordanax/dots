@@ -1,0 +1,66 @@
+general {
+  output_format = "i3bar"
+  markup = pango
+  colors = true
+  color_good = "#24B396"
+  color_degraded = "#FFD631"
+  color_bad = "#DD5B7E"
+  interval = 2 
+}
+order += "disk /"
+order += "disk /home"
+order += "cpu_temperature 0"
+order += "cpu_usage"
+order += "memory"
+order += "tztime local"
+order += "volume master"
+order += "wireless _first_"
+
+disk "/" {
+        format = "<span background='#081c27' foreground='#017872'></span><span background='#017872' foreground='#0C0C0C'>  /:%free </span>"
+        separator = false
+        separator_block_width = 0
+}
+disk "/home" {
+        format = "<span background='#017872' foreground='#980000'></span><span background='#980000' foreground='#0C0C0C'>  /home:%free </span>"
+        separator = false
+        separator_block_width = 0
+}
+cpu_temperature 0 {
+        format = "<span background='#980000' foreground='#BD6636'></span><span background='#BD6636' foreground='#0C0C0C'>  TEM:%degrees°C </span>"
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp3_input"
+        separator = false
+        separator_block_width = 0
+}
+cpu_usage {
+        format = "<span background='#BD6636' foreground='#478A38'></span><span background='#478A38' foreground='#0C0C0C'>  CPU:%usage </span>"
+        separator = false
+        separator_block_width = 0
+}
+memory {
+        format = "<span background='#478A38' foreground='#4F4FB3'></span><span background='#4F4FB3' foreground='#0C0C0C'>  MEM:%percentage_used </span>"
+        threshold_degraded = "1.4G"
+        format_degraded = "MEM %used"
+        separator = false
+        separator_block_width = 0
+}    
+tztime local {
+		format = "<span background='#4F4FB3' foreground='#a38500'></span><span background='#a38500' foreground='#0C0C0C' > %time </span>"
+        format_time = " %a %-d %b   %H:%M"
+        separator = false
+        separator_block_width = 0
+}
+volume master {
+        format = "<span background='#a38500' foreground='#80007e'></span><span background='#80007e' foreground='#0C0C0C'>  %volume </span>"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+        separator = false
+        separator_block_width = 0
+}
+wireless _first_ {
+        format_up =   "<span background='#80007e' foreground='#457DC0'></span><span background='#457DC0' foreground='#0C0C0C' > %quality </span>"
+        format_down = "<span background='#80007e' foreground='#980000'></span><span background='#980000' foreground='#0C0C0C' >  down </span>"
+        separator = false
+        separator_block_width = 0
+}
