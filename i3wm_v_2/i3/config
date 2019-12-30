@@ -11,8 +11,6 @@ exec --no-startup-id xflux -l 54.73, -g 55.97 -k 2700
 exec --no-startup-id megasync
 
 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
 # Отлючение заголовков
 default_border pixel
 
@@ -43,9 +41,9 @@ bindsym $mod+F8 exec --no-startup-id libreoffice --calc
 bindsym $mod+F10 exec --no-startup-id thunar
 bindsym $mod+m exec --no-startup-id megasync
 bindsym Print exec --no-startup-id flameshot gui
-bindsym $mod+Prior exec killall -s 6 vlc todoist megasync
 bindsym $mod+Home exec --no-startup-id cvlc
 bindsym $mod+Menu exec --no-startup-id i3lock-fancy
+bindsym $mod+Prior exec killall -s 6 vlc todoist megasync flameshot firefox subl3
 
 # Перекидывает открытое окно на нужный рабочий стол
 for_window [class="Vlc"] move to workspace $ws9
@@ -218,3 +216,5 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
