@@ -61,14 +61,6 @@ line-size = 1
 ;line-color = #f00
 
 
-
-
-#Рамка вокруг панели
-#border-size = 2
-#border-color = #427ECF
-
-
-
 #отступы содержимого панели от края
 padding-left = 0
 padding-right = 0
@@ -77,7 +69,7 @@ padding-right = 0
 
 #отступы между модулями
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
 
 #Шрифты
@@ -90,10 +82,9 @@ font-3 = FontAwesome5Brands:style=Solid:size=7.5;2.5
 
 
 #Расположение и активация модулей
-modules-left = i3 vk  pavucontrol pamac-manager browser telegram audacious vlc playonlinux steam-runtime lxtask  keepassxc timeshift term  cherrytree fm filesystem
-modules-center = title
-modules-right =  pulseaudio xkeyboard cpu memory temperature_core2 temperature_core3 date powermenu 
-
+modules-left = i3
+modules-center = title openweathermap-fullfeatured
+modules-right = pulseaudio xkeyboard cpu memory temperature_core2 temperature_core3 date powermenu 
 
 
 
@@ -105,7 +96,17 @@ tray-detached = false
 #tray-background = #0063ff
 
 
+#########################
+## ПОДКЛЮЧЕНЫЕ МОДУЛИ  ##
+############################################################################################################
 
+############################################################################################################
+
+[module/openweathermap-fullfeatured]
+type = custom/script
+exec = ~/.config/polybar/scripts/openweathermap-fullfeatured.sh
+interval = 600
+label-font = 3
 
 [settings]
 #Reload upon receiving XCB_RANDR_SCREEN_CHANGE_NOTIFY events
@@ -151,11 +152,6 @@ wm-restack = i3
 
 
 
-#########################
-## ПОДКЛЮЧЕНЫЕ МОДУЛИ  ##
-############################################################################################################
-
-#Активные иконки
 
 
 ############################################################################################################
@@ -392,13 +388,6 @@ format-background = #255294
 
 #отступы между тексом и фоном
 label-padding = 4
-
-
-
-
-
-
-
 
 
 ############################################################################################################
