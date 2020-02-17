@@ -61,6 +61,8 @@
       <property name="&lt;Super&gt;F3" type="string" value="subl3"/>
       <property name="&lt;Super&gt;F4" type="string" value="cherrytree"/>
       <property name="&lt;Super&gt;F5" type="string" value="filezilla"/>
+      <property name="&lt;Super&gt;w" type="string" value="libreoffice --writer"/>
+      <property name="&lt;Super&gt;c" type="string" value="libreoffice --calc"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
