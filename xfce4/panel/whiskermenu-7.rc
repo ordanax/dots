@@ -1,6 +1,5 @@
-favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,firefox.desktop,org.kde.kdenlive.desktop,sublime_text_3.desktop,flameshot.desktop,cherrytree.desktop,freemind.desktop,gimp.desktop,timeshift-gtk.desktop,signal-desktop.desktop,veracrypt.desktop
-recent=xfce-keyboard-settings.desktop,telegramdesktop.desktop,libreoffice-calc.desktop,popcorntime.desktop,net.minetest.minetest.desktop,veracrypt.desktop,chromium.desktop,signal-desktop.desktop,recoll-searchgui.desktop,bleachbit.desktop
-button-title=Приложения
+favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,firefox.desktop,org.kde.kdenlive.desktop,sublime_text_3.desktop,flameshot.desktop,cherrytree.desktop,freemind.desktop,gimp.desktop,telegramdesktop.desktop,recoll-searchgui.desktop,menulibre.desktop
+recent=org.kde.kdenlive.desktop,menulibre.desktop,xfce-wmtweaks-settings.desktop,panel-preferences.desktop,xfce-display-settings.desktop,veracrypt.desktop,flameshot.desktop,chromium.desktop,com.obsproject.Studio.desktop,libreoffice-impress.desktop
 button-icon=/usr/share/pixmaps/arch_logo.png
 button-single-row=false
 show-button-title=false
@@ -13,6 +12,7 @@ hover-switch-category=false
 category-show-name=true
 category-icon-size=1
 load-hierarchy=false
+view-as-icons=false
 recent-items-max=10
 favorites-in-recent=true
 display-recent-default=false

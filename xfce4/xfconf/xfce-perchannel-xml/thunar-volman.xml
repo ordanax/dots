@@ -10,7 +10,8 @@
   <property name="autobrowse" type="empty">
     <property name="enabled" type="bool" value="true"/>
   </property>
-  <property name="autophoto" type="empty">
-    <property name="enabled" type="bool" value="false"/>
+  <property name="autoplay-audio-cds" type="empty">
+    <property name="enabled" type="bool" value="true"/>
+    <property name="command" type="string" value="mount -t iso9660 -o ro /dev/cdrom /cd"/>
   </property>
 </channel>

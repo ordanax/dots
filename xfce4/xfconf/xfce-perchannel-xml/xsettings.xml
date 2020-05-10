@@ -2,7 +2,7 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="OSX-Arc-Shadow"/>
+    <property name="ThemeName" type="string" value="OSX-Arc-Shadow-master"/>
     <property name="IconThemeName" type="string" value="Papirus-Dark"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
@@ -10,8 +10,8 @@
     <property name="CursorBlink" type="empty"/>
     <property name="CursorBlinkTime" type="empty"/>
     <property name="SoundThemeName" type="empty"/>
-    <property name="EnableEventSounds" type="bool" value="false"/>
-    <property name="EnableInputFeedbackSounds" type="bool" value="false"/>
+    <property name="EnableEventSounds" type="empty"/>
+    <property name="EnableInputFeedbackSounds" type="empty"/>
   </property>
   <property name="Xft" type="empty">
     <property name="DPI" type="empty"/>
@@ -21,7 +21,7 @@
     <property name="RGBA" type="string" value="rgb"/>
   </property>
   <property name="Gtk" type="empty">
-    <property name="CanChangeAccels" type="bool" value="false"/>
+    <property name="CanChangeAccels" type="empty"/>
     <property name="ColorPalette" type="empty"/>
     <property name="FontName" type="string" value="Sans 11"/>
     <property name="MonospaceFontName" type="string" value="Roboto Mono Medium 10"/>
@@ -33,7 +33,7 @@
     <property name="ButtonImages" type="bool" value="false"/>
     <property name="MenuBarAccel" type="empty"/>
     <property name="CursorThemeName" type="string" value="capitaine-cursors-light"/>
-    <property name="CursorThemeSize" type="int" value="16"/>
+    <property name="CursorThemeSize" type="int" value="20"/>
     <property name="DecorationLayout" type="string" value="close,maximize,minimize:"/>
   </property>
   <property name="Gdk" type="empty">

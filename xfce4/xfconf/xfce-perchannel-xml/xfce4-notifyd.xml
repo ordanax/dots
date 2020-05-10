@@ -4,6 +4,7 @@
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
       <value type="string" value="chromium"/>
+      <value type="string" value="clementine"/>
       <value type="string" value="com.github.wwmm.pulseeffects"/>
       <value type="string" value="Dropbox"/>
       <value type="string" value="Electron"/>
@@ -16,10 +17,9 @@
       <value type="string" value="notify-send"/>
       <value type="string" value="org.gajim.Gajim"/>
       <value type="string" value="org.kde.kdenlive"/>
-      <value type="string" value="org.manjaro.pamac.installer"/>
       <value type="string" value="org.manjaro.pamac.manager"/>
       <value type="string" value="qBittorrent"/>
-      <value type="string" value="signal"/>
+      <value type="string" value="Slack"/>
       <value type="string" value="thunar"/>
       <value type="string" value="Thunar"/>
       <value type="string" value="thunar-volman"/>

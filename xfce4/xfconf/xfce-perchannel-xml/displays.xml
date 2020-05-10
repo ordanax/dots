@@ -42,4 +42,19 @@
     </property>
   </property>
   <property name="ActiveProfile" type="string" value="Default"/>
+  <property name="Fallback" type="empty">
+    <property name="eDP1" type="string" value="Ноутбук">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="4f0ad5e650aa8975ba99dd8a7923319e72859195"/>
+      <property name="Resolution" type="string" value="1366x768"/>
+      <property name="RefreshRate" type="double" value="60.015983"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+  </property>
 </channel>

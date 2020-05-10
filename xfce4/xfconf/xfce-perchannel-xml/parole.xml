@@ -6,13 +6,11 @@
   </property>
   <property name="window" type="empty">
     <property name="maximized" type="bool" value="false"/>
-    <property name="width" type="int" value="904"/>
-    <property name="height" type="int" value="282"/>
   </property>
   <property name="audio" type="empty">
     <property name="volume" type="int" value="50"/>
   </property>
-  <property name="playlist" type="empty">
-    <property name="show-playlist" type="bool" value="true"/>
+  <property name="folders" type="empty">
+    <property name="last-used-media" type="string" value="/home/ordanax"/>
   </property>
 </channel>
