@@ -1,5 +1,5 @@
-favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,firefox.desktop,org.kde.kdenlive.desktop,sublime_text_3.desktop,flameshot.desktop,cherrytree.desktop,freemind.desktop,gimp.desktop,telegramdesktop.desktop,recoll-searchgui.desktop,menulibre.desktop
-recent=org.kde.kdenlive.desktop,menulibre.desktop,xfce-wmtweaks-settings.desktop,panel-preferences.desktop,xfce-display-settings.desktop,veracrypt.desktop,flameshot.desktop,chromium.desktop,com.obsproject.Studio.desktop,libreoffice-impress.desktop
+favorites=exo-file-manager.desktop,firefox.desktop,org.kde.kdenlive.desktop,sublime_text_3.desktop,flameshot.desktop,cherrytree.desktop,freemind.desktop,gimp.desktop,telegramdesktop.desktop,recoll-searchgui.desktop,menulibre.desktop
+recent=xfce-wm-settings.desktop,menulibre.desktop,org.kde.kdenlive.desktop,xfce-wmtweaks-settings.desktop,panel-preferences.desktop,xfce-display-settings.desktop,veracrypt.desktop,flameshot.desktop,chromium.desktop,com.obsproject.Studio.desktop
 button-icon=/usr/share/pixmaps/arch_logo.png
 button-single-row=false
 show-button-title=false
