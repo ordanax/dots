@@ -84,7 +84,7 @@ font-3 = FontAwesome5Brands:style=Solid:size=7.5;2.5
 #Расположение и активация модулей
 modules-left = i3
 modules-center = title openweathermap-fullfeatured
-modules-right = pulseaudio xkeyboard cpu memory temperature_core2 temperature_core3 date powermenu 
+modules-right = filesystem cpu memory temperature_core2 temperature_core3 pulseaudio xkeyboard date powermenu 
 
 
 
@@ -101,6 +101,17 @@ tray-detached = false
 ############################################################################################################
 
 ############################################################################################################
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+mount-0 = /
+mount-1 = /home
+
+label-mounted = %{F#0a81f5} %mountpoint%: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
 
 [module/openweathermap-fullfeatured]
 type = custom/script
@@ -243,34 +254,6 @@ ramp-volume-3 = 
 ramp-volume-4 = 
 
 
-
-############################################################################################################
-#Модуль раскладки клавиатуры
-#https://github.com/polybar/polybar/wiki/Module:-xkeyboard
-
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-label-NAME-maxlen = 30
-format-prefix = " "
-#format-prefix-foreground = ${colors.foreground-alt}
-#format-prefix-overline = CF5E7F
-#format-prefix-underline = CF5E7F
-
-label-layout =  %layout%
-#label-layout-overline = CF5E7F
-#label-layout-underline = CF5E7F
-
-#label-indicator-padding = 2
-#label-indicator-margin = 1
-#label-indicator-background = 2B7DBC
-#label-indicator-overline = 2B7DBC
-#label-indicator-underline = 2B7DBC
-
-
-
-
 ############################################################################################################
 #модуль загрузки CPU
 #https://github.com/polybar/polybar/wiki/Module:-cpu
@@ -300,7 +283,7 @@ warn-temperature = 65
 #путь к файлу отвечающему за температуру ядра
 hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp3_input
 
-label = %{F#FBE191} %temperature-c%
+label = %{F#ff0000} %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = #CA4E4E
 #format-overline = #DFC257
@@ -313,7 +296,8 @@ format-warn = <ramp> <label-warn>
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
-ramp-foreground = #FBE191
+ramp-foreground = #ff0000
+#ramp-foreground = #FBE191
 
 
 ############################################################################################################
@@ -333,6 +317,29 @@ label = %{F#8d61ff}  MEM %percentage_used%%
 
 
 
+############################################################################################################
+#Модуль раскладки клавиатуры
+#https://github.com/polybar/polybar/wiki/Module:-xkeyboard
+
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+label-NAME-maxlen = 30
+format-prefix = " "
+#format-prefix-foreground = ${colors.foreground-alt}
+#format-prefix-overline = CF5E7F
+#format-prefix-underline = CF5E7F
+
+label-layout =  %layout%
+#label-layout-overline = CF5E7F
+#label-layout-underline = CF5E7F
+
+#label-indicator-padding = 2
+#label-indicator-margin = 1
+#label-indicator-background = 2B7DBC
+#label-indicator-overline = 2B7DBC
+#label-indicator-underline = 2B7DBC
 
 
 
