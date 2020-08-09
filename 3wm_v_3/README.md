@@ -3,4 +3,4 @@
 
 $yay -S ttf-weather-icons ttf-clear-sans
 
-![Конфиг i3wm](https://i.imgur.com/7Ly2yEt.png "Конфиг i3wm")
+![Конфиг i3wm](https://i.imgur.com/ReFLOSw.png "Конфиг i3wm")
