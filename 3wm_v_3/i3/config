@@ -8,7 +8,7 @@ exec --no-startup-id exec picom -b
 exec --no-startup-id xrandr --dpi 100
 exec --no-startup-id flameshot
 exec --no-startup-id sbxkb
-exec --no-startup-id xflux -l 56.34, -g 18.95 -k 2000
+exec --no-startup-id xflux -l 55.7, -g 37.6 -k 2000
 exec --no-startup-id megasync
 #exec --no-startup-id todoist
 
