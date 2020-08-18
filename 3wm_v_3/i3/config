@@ -3,14 +3,14 @@ set $mod Mod4
 
 ### Автозапуск программ
 exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
-exec --no-startup-id feh --bg-scale /usr/share/backgrounds/xfce/bg.jpg
-exec --no-startup-id exec compton -b
+exec --no-startup-id feh --bg-scale /usr/share/backgrounds/bg.jpg
+exec --no-startup-id exec picom -b
 exec --no-startup-id xrandr --dpi 100
 exec --no-startup-id flameshot
 exec --no-startup-id sbxkb
 exec --no-startup-id xflux -l 56.34, -g 18.95 -k 2000
 exec --no-startup-id megasync
-exec --no-startup-id pamac-tray
+#exec --no-startup-id todoist
 
 ### Отлючение заголовков
 default_border pixel
@@ -23,25 +23,34 @@ bindsym $mod+F1 exec --no-startup-id firefox
 bindsym $mod+F2 exec --no-startup-id pcmanfm
 bindsym $mod+F3 exec --no-startup-id subl3
 bindsym $mod+F4 exec --no-startup-id cherrytree
+bindsym $mod+F5 exec --no-startup-id todoist
+bindsym $mod+F6 exec --no-startup-id trello
+bindsym $mod+F7 exec --no-startup-id libreoffice --calc /home/ordanax/MEGA/002_ADMIN/СТАТИСТИКА+ПРАЙС/СТАТИСТИКА_2020.ods
+
 bindsym $mod+t exec --no-startup-id telegram-desktop
 bindsym $mod+Ctrl+t exec --no-startup-id killall -s 6 telegram-desktop
 bindsym $mod+w exec --no-startup-id libreoffice --writer
 bindsym $mod+c exec --no-startup-id libreoffice --calc
 bindsym Print exec --no-startup-id flameshot gui
-bindsym Prior exec --no-startup-id killall -s 6 vlc
-bindsym Home exec --no-startup-id cvlc
+#bindsym Prior exec --no-startup-id killall -s 6 vlc
+#bindsym Home exec --no-startup-id cvlc
 bindsym $mod+Menu exec --no-startup-id i3lock-fancy
+bindsym Home exec --no-startup-id deadbeef --play --random
+bindsym Next exec --no-startup-id deadbeef --prev 
+bindsym End exec --no-startup-id deadbeef --next
+bindsym Prior exec --no-startup-id deadbeef --quit
 
 ### Перекидывает открытое окно на нужный рабочий стол
-for_window [class="Vlc"] move to workspace $ws9
+#for_window [class="Vlc"] move to workspace $ws9
 
 ### Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
+for_window [class="Yad" title="yad-calendar"] floating enable
 #for_window [class="Xfce4-terminal"] floating enable
 
 ### Горячие клавиши
 bindsym $mod+q kill
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec sakura
 bindsym $mod+Escape exec shutdown -h now
 bindsym $mod+r exec reboot
 
@@ -202,26 +211,5 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-# bar {
-#        # status_command i3status
-#         status_command i3blocks
-#         position top
-#         colors {
-#    
-#     #DEFAULT I3 BAR THEME
-#     background #081c27
-#     statusline #bbbbbb
-
-#     ### border backgr text
-#     focused_workspace  #4c7899 #285577 #000000
-#     active_workspace   #333333 #457DC0 #000000
-#     inactive_workspace #333333 #081c27 #888888
-#     urgent_workspace   #2f343a #900000 #000000
-    
-#        } 
-# }
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
