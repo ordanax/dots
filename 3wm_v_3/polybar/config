@@ -81,7 +81,7 @@ font-3 = FontAwesome5Brands:style=Solid:size=7.5;2.5
 #######################################
 modules-left = i3 menu updates-pacman-aurhelper
 modules-center = title openweathermap-fullfeatured
-modules-right = filesystem cpu memory temperature_core2 temperature_core3 pulseaudio flux battery-combined-tlp date xkeyboard powermenu 
+modules-right = filesystem cpu memory temperature_core2 temperature_core3 pulseaudio flux battery-combined-tlp date xkeyboard powermenu popup-calendar
 
 
 
@@ -129,6 +129,7 @@ type = custom/script
 exec = echo %{F#e8793e}""
 click-left = killall -s 6 xflux && xflux -l 56.34, -g 18.95 -k 2000
 click-right = killall -s 6 xflux && xflux -l 56.34, -g 18.95 -k 5000
+
 
 [module/updates-pacman-aurhelper]
 type = custom/script
@@ -376,10 +377,18 @@ label-layout =  %layout%
 ############################################################################################################
 #Модуль батарея
 
-[module/battery-combined-tlp]
+#[module/battery-combined-tlp]
+#type = custom/script
+#exec = ~/.config/polybar/scripts/battery-combined-tlp.sh
+#interval = 10
+
+############################################################################################################
+#Модуль календарь
+[module/popup-calendar]
 type = custom/script
-exec = ~/.config/polybar/scripts/battery-combined-tlp.sh
-interval = 10
+exec = ~/.config/polybar/scripts/popup-calendar.sh
+interval = 5
+click-left = ~/.config/polybar/scripts/popup-calendar.sh --popup &
 
 ############################################################################################################
 #Модуль времени и даты
