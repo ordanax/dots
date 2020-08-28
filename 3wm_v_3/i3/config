@@ -25,20 +25,22 @@ bindsym $mod+F3 exec --no-startup-id subl3
 bindsym $mod+F4 exec --no-startup-id cherrytree
 bindsym $mod+F5 exec --no-startup-id todoist
 bindsym $mod+F6 exec --no-startup-id trello
+bindsym $mod+b exec --no-startup-id bleachbit
 bindsym $mod+F7 exec --no-startup-id libreoffice --calc /home/ordanax/MEGA/002_ADMIN/СТАТИСТИКА+ПРАЙС/СТАТИСТИКА_2020.ods
+bindsym $mod+F8 exec --no-startup-id chromium
 
 bindsym $mod+t exec --no-startup-id telegram-desktop
 bindsym $mod+Ctrl+t exec --no-startup-id killall -s 6 telegram-desktop
 bindsym $mod+w exec --no-startup-id libreoffice --writer
 bindsym $mod+c exec --no-startup-id libreoffice --calc
 bindsym Print exec --no-startup-id flameshot gui
-#bindsym Prior exec --no-startup-id killall -s 6 vlc
-#bindsym Home exec --no-startup-id cvlc
+bindsym $mod+Prior exec --no-startup-id killall -s 6 vlc
+bindsym $mod+Home exec --no-startup-id cvlc
 bindsym $mod+Menu exec --no-startup-id i3lock-fancy
 bindsym Home exec --no-startup-id deadbeef --play --random
 bindsym Next exec --no-startup-id deadbeef --prev 
 bindsym End exec --no-startup-id deadbeef --next
-bindsym Prior exec --no-startup-id deadbeef --quit
+bindsym Prior exec --no-startup-id deadbeef --quit & killall -s 6 vlc
 
 ### Перекидывает открытое окно на нужный рабочий стол
 #for_window [class="Vlc"] move to workspace $ws9

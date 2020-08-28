@@ -79,9 +79,9 @@ font-3 = FontAwesome5Brands:style=Solid:size=7.5;2.5
 #######################################
 ## РАСПОЛОЖЕНИЕ И АКТИВАЦИЯ МОДУЛЕЙ  ##
 #######################################
-modules-left = i3 menu updates-pacman-aurhelper
+modules-left = i3 menu updates-pacman-aurhelper vpn
 modules-center = title openweathermap-fullfeatured
-modules-right = filesystem cpu memory temperature_core2 temperature_core3 pulseaudio flux battery-combined-tlp date xkeyboard powermenu popup-calendar
+modules-right = filesystem cpu memory temperature_core2 temperature_core3 pulseaudio flux  battery-combined-tlp xkeyboard powermenu popup-calendar
 
 
 
@@ -103,6 +103,7 @@ type = custom/menu
 format-spacing = 2
 
 label-open = 
+exec = libreoffice --calc /home/ordanax/MEGA/002_ADMIN/СТАТИСТИКА+ПРАЙС/СТАТИСТИКА_2020.ods 
 label-open-foreground = #dfecfa
 label-close = 
 format-padding = 1
@@ -123,12 +124,19 @@ menu-0-2-exec = todoist
 menu-0-3 =  
 menu-0-3-exec = galculator
 
-
 [module/flux]
 type = custom/script
 exec = echo %{F#e8793e}""
 click-left = killall -s 6 xflux && xflux -l 55.7, -g 37.6 -k 2000
-click-right = killall -s 6 xflux && xflux -l 55.7, -g 37.6 -k 2000
+click-right = killall -s 6 xflux && xflux -l 55.7, -g 37.6 -k 10000
+
+[module/vpn]
+type = custom/script
+#exec = protonvpn status
+exec = ~/.config/polybar/scripts/vpn-openvpn-isrunning.sh
+interval = 6
+click-left = sudo protonvpn c -f
+click-right = sudo protonvpn disconnect
 
 
 [module/updates-pacman-aurhelper]
