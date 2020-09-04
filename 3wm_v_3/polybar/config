@@ -79,7 +79,7 @@ font-3 = FontAwesome5Brands:style=Solid:size=7.5;2.5
 #######################################
 ## РАСПОЛОЖЕНИЕ И АКТИВАЦИЯ МОДУЛЕЙ  ##
 #######################################
-modules-left = i3 menu updates-pacman-aurhelper vpn
+modules-left = i3 menu updates-pacman-aurhelper vpn usd
 modules-center = title openweathermap-fullfeatured
 modules-right = filesystem cpu memory temperature_core2 temperature_core3 pulseaudio flux  battery-combined-tlp xkeyboard powermenu popup-calendar
 
@@ -124,6 +124,9 @@ menu-0-2-exec = todoist
 menu-0-3 =  
 menu-0-3-exec = galculator
 
+menu-0-4 = 
+menu-0-4-exec = gromit-mpx
+
 [module/flux]
 type = custom/script
 exec = echo %{F#e8793e}""
@@ -137,6 +140,11 @@ exec = ~/.config/polybar/scripts/vpn-openvpn-isrunning.sh
 interval = 6
 click-left = sudo protonvpn c -f
 click-right = sudo protonvpn disconnect
+
+[module/usd]
+type = custom/script
+exec = ~/.config/polybar/scripts/btc usd,eur,btc rub
+#interval = 60
 
 
 [module/updates-pacman-aurhelper]

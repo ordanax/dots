@@ -22,12 +22,13 @@ bindsym --release button2 kill
 bindsym $mod+F1 exec --no-startup-id firefox
 bindsym $mod+F2 exec --no-startup-id pcmanfm
 bindsym $mod+F3 exec --no-startup-id subl3
+bindsym $mod+Ctrl+F3 exec --no-startup-id killall -s 6 subl3
 bindsym $mod+F4 exec --no-startup-id cherrytree
-bindsym $mod+F5 exec --no-startup-id todoist
 bindsym $mod+F6 exec --no-startup-id trello
 bindsym $mod+b exec --no-startup-id bleachbit
 bindsym $mod+F7 exec --no-startup-id libreoffice --calc /home/ordanax/MEGA/002_ADMIN/СТАТИСТИКА+ПРАЙС/СТАТИСТИКА_2020.ods
 bindsym $mod+F8 exec --no-startup-id chromium
+bindsym $mod+F10 exec --no-startup-id todoist
 
 bindsym $mod+t exec --no-startup-id telegram-desktop
 bindsym $mod+Ctrl+t exec --no-startup-id killall -s 6 telegram-desktop
@@ -41,9 +42,20 @@ bindsym Home exec --no-startup-id deadbeef --play --random
 bindsym Next exec --no-startup-id deadbeef --prev 
 bindsym End exec --no-startup-id deadbeef --next
 bindsym Prior exec --no-startup-id deadbeef --quit & killall -s 6 vlc
+bindsym $mod+Ctrl+v exec --no-startup-id sudo protonvpn disconnect
+
+## Specific workspaces
+assign [window_role="browser"] $ws1
+assign [window_role="gimp"] $ws5
+assign [class="(?i)trello|todoist"] $ws10
+#assign [class="(?i)cherrytree"] $ws4
+#assign [class="(?i)chromium"] $ws8
+#assign [title="(?i)term-tiling"] $ws2
+#assign [class="(?i)subl3|thunar"] $ws3
+#assign [class="(?i)telegram|discord"] $ws6
 
 ### Перекидывает открытое окно на нужный рабочий стол
-#for_window [class="Vlc"] move to workspace $ws9
+for_window [class="todoist"] move to workspace $ws10
 
 ### Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
@@ -70,6 +82,7 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+
 
 ### Cпрятать окно, чтобы оно не мешалось, но в то же время было всегда под рукой. 
 ### Можно добавить несколько окон и переключаться между ними. 
