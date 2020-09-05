@@ -22,12 +22,9 @@ bindsym --release button2 kill
 bindsym $mod+F1 exec --no-startup-id firefox
 bindsym $mod+F2 exec --no-startup-id pcmanfm
 bindsym $mod+F3 exec --no-startup-id subl3
-bindsym $mod+Ctrl+F3 exec --no-startup-id killall -s 6 subl3
 bindsym $mod+F4 exec --no-startup-id cherrytree
-bindsym $mod+F6 exec --no-startup-id trello
-bindsym $mod+b exec --no-startup-id bleachbit
-bindsym $mod+F7 exec --no-startup-id libreoffice --calc /home/ordanax/MEGA/002_ADMIN/СТАТИСТИКА+ПРАЙС/СТАТИСТИКА_2020.ods
 bindsym $mod+F8 exec --no-startup-id chromium
+bindsym $mod+F9 exec --no-startup-id trello
 bindsym $mod+F10 exec --no-startup-id todoist
 
 bindsym $mod+t exec --no-startup-id telegram-desktop
@@ -42,12 +39,13 @@ bindsym Home exec --no-startup-id deadbeef --play --random
 bindsym Next exec --no-startup-id deadbeef --prev 
 bindsym End exec --no-startup-id deadbeef --next
 bindsym Prior exec --no-startup-id deadbeef --quit & killall -s 6 vlc
+bindsym $mod+v exec --no-startup-id sudo protonvpn c -f
 bindsym $mod+Ctrl+v exec --no-startup-id sudo protonvpn disconnect
 
 ## Specific workspaces
-assign [window_role="browser"] $ws1
+#assign [window_role="browser"] $ws1
 assign [window_role="gimp"] $ws5
-assign [class="(?i)trello|todoist"] $ws10
+#assign [class="(?i)trello|todoist"] $ws10
 #assign [class="(?i)cherrytree"] $ws4
 #assign [class="(?i)chromium"] $ws8
 #assign [title="(?i)term-tiling"] $ws2
