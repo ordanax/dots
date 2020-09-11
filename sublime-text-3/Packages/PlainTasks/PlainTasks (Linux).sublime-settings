@@ -10,6 +10,7 @@
   "new_on_top": true, // how to sort archived tasks
   "show_remain_due": true, // in Sublime 3, show remain or overdue time under due tags
 
+  // "color_scheme": "Packages/PlainTasks/tasks.hidden-tmTheme",
   "color_scheme": "Packages/PlainTasks/tasks-eighties-colored.hidden-tmTheme",
     // other bundled schemes:
     //   Packages/PlainTasks/tasks-dark.hidden-tmTheme

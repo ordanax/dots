@@ -3,11 +3,11 @@
 	[
 	],
 	"last_version": 3211,
-	"last_window_id": 3,
+	"last_window_id": 2,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 716.0,
+		"new_window_height": 0.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -26,14 +26,6 @@
 				"last_filter": "",
 				"selected_items":
 				[
-					[
-						"Package Control: Install Package",
-						"Package Control: Install Package"
-					],
-					[
-						"Package Control",
-						"Install Package Control"
-					]
 				],
 				"width": 0.0
 			},
@@ -55,25 +47,104 @@
 			},
 			"file_history":
 			[
-				"/home/ordanax/.config/sublime-text-3/Packages/PlainTasks/Default (Linux).sublime-keymap",
-				"/home/ordanax/.config/sublime-text-3/Packages/PlainTasks/PlainTasks (Linux).sublime-settings",
-				"/home/ordanax/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
-				"/home/ordanax/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
-				"/home/ordanax/.config/sublime-text-3/Packages/User/PlainTasks.sublime-settings",
-				"/home/ordanax/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+				"/home/ordanax/.bashrc",
+				"/var/log/pacman.log",
+				"/home/ordanax/.config/i3/config",
 				"/home/ordanax/MEGA/001_ПРОГРАММА/help.todo",
-				"/home/ordanax/MEGA/001_ПРОГРАММА/000_БП_НА_НЕДЕЛЮ.todo",
-				"/home/ordanax/MEGA/IP_TV_&_ONLINE_RADIO/synthpop_radio.m3u",
-				"/home/ordanax/MEGA/IP_TV_&_ONLINE_RADIO/RADIO.m3u",
-				"/home/ordanax/MEGA/IP_TV_&_ONLINE_RADIO/AllRadio.m3u",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/keyboards.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/parole.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/thunar-volman.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/xfcethemer.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
+				"/home/ordanax/.config/polybar/scripts/vlc.py",
+				"/home/ordanax/.config/polybar/scripts/vpn-openvpn-isrunning.sh",
+				"/home/ordanax/.config/polybar/config",
+				"/home/ordanax/Музыка/best.m3u",
+				"/home/ordanax/.config/polybar/scripts/popup-calendar.sh",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpris-tail/README.md",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpv-tail/README.md",
+				"/home/ordanax/.config/polybar/scripts/updates-pacman-aurhelper.sh",
+				"/home/ordanax/.config/polybar/scripts/btc",
+				"/home/ordanax/.config/polybar/scripts/battery-combined-tlp.sh",
+				"/home/ordanax/.config/polybar/scripts/openweathermap-fullfeatured.sh",
+				"/home/ordanax/MEGA/PYTHON/time_of_day.sh",
+				"/home/ordanax/.config/polybar/scripts/player-mpris-tail.py",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpris-simple/player-mpris-simple.sh",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpv-tail/player-mpv-tail.py",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-moc/player-moc.sh",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-moc/README.md",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpris-tail/player-mpris-tail.py",
+				"/home/ordanax/MEGA/001_ПРОГРАММА/000_БП.todo",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-cmus/README.md",
+				"/home/ordanax/.mplayer/config",
+				"/home/ordanax/.config/polybar/scripts/config",
+				"/home/ordanax/Загрузки/player-mpris-tail.py",
+				"/home/ordanax/.mpd/mpd.conf",
+				"/home/ordanax/Загрузки/ncmpcpp-master/INSTALL",
+				"/home/ordanax/Загрузки/ncmpcpp-master/NEWS",
+				"/home/ordanax/Загрузки/ncmpcpp-master/config.sub",
+				"/home/ordanax/.ncmpcpp/error.log",
+				"/home/ordanax/Загрузки/ncmpcpp-master/src/charset.cpp",
+				"/home/ordanax/.git/HEAD",
+				"/home/ordanax/.git/config",
+				"/home/ordanax/MEGA/ПАПКА ОБМЕНА/Объявления Хироши.txt",
+				"/home/ordanax/.config/picom.conf",
+				"/home/ordanax/Загрузки/000",
+				"/home/ordanax/Документы/sublime-text-3/Packages/PlainTasks/Readme.md",
+				"/home/ordanax/Документы/sublime-text-3/Packages/PlainTasks/PlainTasks.py",
+				"/home/ordanax/Загрузки/archlive/airootfs/etc/calamares/branding/a4u/branding.desc",
+				"/home/ordanax/archlive/airootfs/usr/bin/a4u-welcome",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/share/calamares/branding/a4u/branding.desc",
+				"/home/ordanax/Загрузки/calamares-master/src/branding/a4u/branding.desc",
+				"/home/ordanax/Загрузки/archlive/packages.x86_64",
+				"/home/ordanax/Загрузки/calamares-master/pkg/PKGBUILD",
+				"/home/ordanax/Загрузки/calamares-master/settings.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/netinstall/netinstall.conf",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/share/calamares/branding/A4u/branding.desc",
+				"/home/ordanax/Загрузки/archlive/airootfs/etc/calamares/branding/A4u/branding.desc",
+				"/home/ordanax/Загрузки/calamares-master/data/calamares.desktop",
+				"/home/ordanax/Загрузки/calamares-master/data/calamares_polkit",
+				"/home/ordanax/archlive/packages.x86_64",
+				"/home/ordanax/Загрузки/calamares-ctlos/data/calamares_polkit",
+				"/home/ordanax/Загрузки/calamares-ctlos/src/branding/ctlos/branding.desc",
+				"/home/ordanax/Загрузки/calamares-ctlos/data/calamares.desktop",
+				"/home/ordanax/Загрузки/calamares-mine/calamares/data/calamares.desktop",
+				"/home/ordanax/Загрузки/calamares-mine/calamares/data/calamares_polkit",
+				"/home/ordanax/Загрузки/calamares-mine/calamares/pkg/PKGBUILD",
+				"/home/ordanax/Загрузки/calamares-master/calamares/pkg/PKGBUILD",
+				"/home/ordanax/packages-pacman.txt",
+				"/home/ordanax/packages-aur.txt",
+				"/home/ordanax/Загрузки/pack.sh",
+				"/home/ordanax/Загрузки/calamares-master/data/49-nopasswd-calamares.rules",
+				"/home/ordanax/archlive/mkarchiso",
+				"/home/ordanax/Загрузки/archlive/mkarchiso",
+				"/home/ordanax/Загрузки/Новый каталог/calamares-master/calamares/pkg/PKGBUILD",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/packages/packages.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/removeuser/removeuser.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/shellprocess/shellprocess.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/unpackfs/unpackfs.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/users/users.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/welcome/welcome.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/bootloader/bootloader.conf",
+				"/home/ordanax/Загрузки/Новый каталог/calamares-master/calamares/pack.sh",
+				"/home/ordanax/Загрузки/Revolution_v.5.1.4(3.0)/read_me.txt",
+				"/home/ordanax/.config/autostart/ctlos-welcome.desktop",
+				"/home/ordanax/.config/autostart/a4u-welcome.desktop",
+				"/home/ordanax/Загрузки/archlive/airootfs/etc/skel/.config/autostart/a4u-welcome.desktop",
+				"/home/ordanax/Desktop/ctlos-welcome",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/bin/ctlos-welcome",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/bin/a4u-welcome",
+				"/home/ordanax/Desktop/a4u-welcome",
+				"/home/ordanax/001/ctlos-welcome",
+				"/home/ordanax/Загрузки/a4u-welcome",
+				"/home/ordanax/Загрузки/ctlos-welcome",
+				"/home/ordanax/.config/autostart/xflux.desktop",
+				"/home/ordanax/.config/autostart/conky.desktop",
+				"/home/ordanax/Загрузки/ctlos-welcome.desktop",
+				"/home/ordanax/001/.config/autostart/ctlos-welcome.desktop",
+				"/home/ordanax/001/usr/bin/a4u-welcome",
+				"/usr/bin/a4u-welcome",
+				"/home/ordanax/001/usr/share/applications/calamares.desktop",
+				"/home/ordanax/001/usr/share/applications/ctlos-welcome.desktop",
+				"/usr/share/applications/calamares.desktop",
+				"/usr/share/applications/ctlos-welcome.desktop",
+				"/home/ordanax/.config/autostart/megasync.desktop",
+				"/home/ordanax/done.txt"
 			],
 			"find":
 			{
@@ -81,9 +152,11 @@
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 139.0,
 				"where_history":
 				[
+					"",
+					"/home/ordanax/Загрузки/calamares-master"
 				]
 			},
 			"find_state":
@@ -91,12 +164,56 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"cut",
-					"paste",
-					"redo_or_repeat",
-					"theme",
-					"mono",
-					"empty"
+					"mpv",
+					"uchardet",
+					"rubberband",
+					"vamp-plugin-sdk",
+					"fftw",
+					"openmpi",
+					"openssh",
+					"ldns",
+					"dnssec-anchors",
+					"hwloc",
+					"mujs",
+					"wshowkeys-git",
+					"boost",
+					"cmake",
+					"rhash",
+					"meson",
+					"ninja",
+					"гром",
+					"@today",
+					"cvlc",
+					"vlc",
+					"next",
+					"mpd",
+					"stop",
+					"~/polybar-scripts/",
+					"cal",
+					"haron",
+					"неделю",
+					"Юле",
+					"opacity",
+					"opa",
+					"picom",
+					"пункт",
+					"отметить",
+					"net",
+					"A4u",
+					"ctl",
+					"install",
+					"4u-welcome.desktop",
+					"don",
+					"ctl",
+					"calamares-master/calamares/pkg/src/calamares-3.2.23",
+					"wiki",
+					"news",
+					"ctl",
+					"ctlos",
+					"ctl",
+					"pyqt5",
+					"ctlos-welcome/img/",
+					"ctlos"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -104,7 +221,13 @@
 				"regex": false,
 				"replace_history":
 				[
-					"gimp"
+					"",
+					"~/.config/polybar/scripts/",
+					"ordanax",
+					"yutube",
+					"a4u",
+					"a4u-welcome/img/",
+					"a4u"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -125,6 +248,10 @@
 			{
 				"height": 0.0
 			},
+			"output.unsaved_changes":
+			{
+				"height": 117.0
+			},
 			"pinned_build_system": "",
 			"replace":
 			{
@@ -137,6 +264,10 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"",
+						"~/Документы/sublime-text-3/Packages/PlainTasks/Readme.md"
+					]
 				],
 				"width": 0.0
 			},
@@ -158,7 +289,7 @@
 				],
 				"width": 0.0
 			},
-			"show_minimap": true,
+			"show_minimap": false,
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
@@ -168,7 +299,7 @@
 			{
 			}
 		},
-		"new_window_width": 1364.0
+		"new_window_width": 0.0
 	},
 	"windows":
 	[
@@ -182,25 +313,30 @@
 			"buffers":
 			[
 				{
-					"contents": "[\n\t{ \"keys\": [\"ctrl+q\"], \"command\": \"exit\" },\n\n\t{ \"keys\": [\"ctrl+shift+n\"], \"command\": \"new_window\" },\n\t{ \"keys\": [\"ctrl+shift+w\"], \"command\": \"close_window\" },\n\t{ \"keys\": [\"ctrl+o\"], \"command\": \"prompt_open_file\" },\n\t{ \"keys\": [\"ctrl+shift+t\"], \"command\": \"reopen_last_file\" },\n\t{ \"keys\": [\"alt+o\"], \"command\": \"switch_file\", \"args\": {\"extensions\": [\"cpp\", \"cxx\", \"cc\", \"c\", \"hpp\", \"hxx\", \"hh\", \"h\", \"ipp\", \"inl\", \"m\", \"mm\"]} },\n\t{ \"keys\": [\"ctrl+n\"], \"command\": \"new_file\" },\n\t{ \"keys\": [\"ctrl+s\"], \"command\": \"save\" },\n\t{ \"keys\": [\"ctrl+shift+s\"], \"command\": \"prompt_save_as\" },\n\t{ \"keys\": [\"ctrl+f4\"], \"command\": \"close_file\" },\n\t{ \"keys\": [\"ctrl+w\"], \"command\": \"close\" },\n\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+b\"], \"command\": \"toggle_side_bar\" },\n\t{ \"keys\": [\"f11\"], \"command\": \"toggle_full_screen\" },\n\t{ \"keys\": [\"shift+f11\"], \"command\": \"toggle_distraction_free\" },\n\n\t{ \"keys\": [\"backspace\"], \"command\": \"left_delete\" },\n\t{ \"keys\": [\"shift+backspace\"], \"command\": \"left_delete\" },\n\t{ \"keys\": [\"ctrl+shift+backspace\"], \"command\": \"left_delete\" },\n\t{ \"keys\": [\"delete\"], \"command\": \"right_delete\" },\n\t{ \"keys\": [\"enter\"], \"command\": \"insert\", \"args\": {\"characters\": \"\\n\"} },\n\t{ \"keys\": [\"shift+enter\"], \"command\": \"insert\", \"args\": {\"characters\": \"\\n\"} },\n\t{ \"keys\": [\"keypad_enter\"], \"command\": \"insert\", \"args\": {\"characters\": \"\\n\"} },\n\t{ \"keys\": [\"shift+keypad_enter\"], \"command\": \"insert\", \"args\": {\"characters\": \"\\n\"} },\n\n\t{ \"keys\": [\"ctrl+z\"], \"command\": \"undo\" },\n\t{ \"keys\": [\"ctrl+shift+z\"], \"command\": \"redo\" },\n\t{ \"keys\": [\"ctrl+y\"], \"command\": \"redo_or_repeat\" },\n\t{ \"keys\": [\"ctrl+u\"], \"command\": \"soft_undo\" },\n\t{ \"keys\": [\"ctrl+shift+u\"], \"command\": \"soft_redo\" },\n\n\t{ \"keys\": [\"shift+delete\"], \"command\": \"cut\" },\n\t{ \"keys\": [\"ctrl+insert\"], \"command\": \"copy\" },\n\t{ \"keys\": [\"shift+insert\"], \"command\": \"paste\" },\n\n\t// These two key bindings should replace the above three if you'd prefer\n\t// the traditional X11 behavior of shift+insert pasting from the primary\n\t// selection. The above CUA keys are the default, to match most GTK\n\t// applications.\n\t//{ \"keys\": [\"shift+insert\"], \"command\": \"paste\", \"args\": {\"clipboard\": \"selection\"} },\n\t//{ \"keys\": [\"shift+delete\"], \"command\": \"right_delete\" },\n\n\t{ \"keys\": [\"ctrl+x\"], \"command\": \"cut\" },\n\t{ \"keys\": [\"ctrl+c\"], \"command\": \"copy\" },\n\t{ \"keys\": [\"ctrl+v\"], \"command\": \"paste\" },\n\t{ \"keys\": [\"ctrl+shift+v\"], \"command\": \"paste_and_indent\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+v\"], \"command\": \"paste_from_history\" },\n\n\t{ \"keys\": [\"left\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": false} },\n\t{ \"keys\": [\"right\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true} },\n\t{ \"keys\": [\"up\"], \"command\": \"move\", \"args\": {\"by\": \"lines\", \"forward\": false} },\n\t{ \"keys\": [\"down\"], \"command\": \"move\", \"args\": {\"by\": \"lines\", \"forward\": true} },\n\t{ \"keys\": [\"shift+left\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": false, \"extend\": true} },\n\t{ \"keys\": [\"shift+right\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true, \"extend\": true} },\n\t{ \"keys\": [\"shift+up\"], \"command\": \"move\", \"args\": {\"by\": \"lines\", \"forward\": false, \"extend\": true} },\n\t{ \"keys\": [\"shift+down\"], \"command\": \"move\", \"args\": {\"by\": \"lines\", \"forward\": true, \"extend\": true} },\n\n\t{ \"keys\": [\"ctrl+left\"], \"command\": \"move\", \"args\": {\"by\": \"words\", \"forward\": false} },\n\t{ \"keys\": [\"ctrl+right\"], \"command\": \"move\", \"args\": {\"by\": \"word_ends\", \"forward\": true} },\n\t{ \"keys\": [\"ctrl+shift+left\"], \"command\": \"move\", \"args\": {\"by\": \"words\", \"forward\": false, \"extend\": true} },\n\t{ \"keys\": [\"ctrl+shift+right\"], \"command\": \"move\", \"args\": {\"by\": \"word_ends\", \"forward\": true, \"extend\": true} },\n\n\t{ \"keys\": [\"alt+left\"], \"command\": \"move\", \"args\": {\"by\": \"subwords\", \"forward\": false} },\n\t{ \"keys\": [\"alt+right\"], \"command\": \"move\", \"args\": {\"by\": \"subword_ends\", \"forward\": true} },\n\t{ \"keys\": [\"alt+shift+left\"], \"command\": \"move\", \"args\": {\"by\": \"subwords\", \"forward\": false, \"extend\": true} },\n\t{ \"keys\": [\"alt+shift+right\"], \"command\": \"move\", \"args\": {\"by\": \"subword_ends\", \"forward\": true, \"extend\": true} },\n\n\t{ \"keys\": [\"alt+shift+up\"], \"command\": \"select_lines\", \"args\": {\"forward\": false} },\n\t{ \"keys\": [\"alt+shift+down\"], \"command\": \"select_lines\", \"args\": {\"forward\": true} },\n\n\t{ \"keys\": [\"pageup\"], \"command\": \"move\", \"args\": {\"by\": \"pages\", \"forward\": false} },\n\t{ \"keys\": [\"pagedown\"], \"command\": \"move\", \"args\": {\"by\": \"pages\", \"forward\": true} },\n\t{ \"keys\": [\"shift+pageup\"], \"command\": \"move\", \"args\": {\"by\": \"pages\", \"forward\": false, \"extend\": true} },\n\t{ \"keys\": [\"shift+pagedown\"], \"command\": \"move\", \"args\": {\"by\": \"pages\", \"forward\": true, \"extend\": true} },\n\n\t{ \"keys\": [\"home\"], \"command\": \"move_to\", \"args\": {\"to\": \"bol\", \"extend\": false} },\n\t{ \"keys\": [\"end\"], \"command\": \"move_to\", \"args\": {\"to\": \"eol\", \"extend\": false} },\n\t{ \"keys\": [\"shift+home\"], \"command\": \"move_to\", \"args\": {\"to\": \"bol\", \"extend\": true} },\n\t{ \"keys\": [\"shift+end\"], \"command\": \"move_to\", \"args\": {\"to\": \"eol\", \"extend\": true} },\n\t{ \"keys\": [\"ctrl+home\"], \"command\": \"move_to\", \"args\": {\"to\": \"bof\", \"extend\": false} },\n\t{ \"keys\": [\"ctrl+end\"], \"command\": \"move_to\", \"args\": {\"to\": \"eof\", \"extend\": false} },\n\t{ \"keys\": [\"ctrl+shift+home\"], \"command\": \"move_to\", \"args\": {\"to\": \"bof\", \"extend\": true} },\n\t{ \"keys\": [\"ctrl+shift+end\"], \"command\": \"move_to\", \"args\": {\"to\": \"eof\", \"extend\": true} },\n\n\t{ \"keys\": [\"ctrl+up\"], \"command\": \"scroll_lines\", \"args\": {\"amount\": 1.0 } },\n\t{ \"keys\": [\"ctrl+down\"], \"command\": \"scroll_lines\", \"args\": {\"amount\": -1.0 } },\n\n\t{ \"keys\": [\"ctrl+pagedown\"], \"command\": \"next_view\" },\n\t{ \"keys\": [\"ctrl+pageup\"], \"command\": \"prev_view\" },\n\n\t{ \"keys\": [\"ctrl+tab\"], \"command\": \"next_view_in_stack\" },\n\t{ \"keys\": [\"ctrl+shift+tab\"], \"command\": \"prev_view_in_stack\" },\n\n\t{ \"keys\": [\"ctrl+a\"], \"command\": \"select_all\" },\n\t{ \"keys\": [\"ctrl+shift+l\"], \"command\": \"split_selection_into_lines\" },\n\t{ \"keys\": [\"escape\"], \"command\": \"single_selection\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"num_selections\", \"operator\": \"not_equal\", \"operand\": 1 }\n\t\t]\n\t},\n\t{ \"keys\": [\"escape\"], \"command\": \"clear_fields\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"has_next_field\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"escape\"], \"command\": \"clear_fields\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"has_prev_field\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"escape\"], \"command\": \"hide_panel\", \"args\": {\"cancel\": true},\n\t\t\"context\":\n\t\t[\n\t\t\t{ \"key\": \"panel_visible\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"escape\"], \"command\": \"hide_overlay\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"overlay_visible\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"escape\"], \"command\": \"hide_popup\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"popup_visible\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"escape\"], \"command\": \"hide_auto_complete\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"auto_complete_visible\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"tab\"], \"command\": \"insert_best_completion\", \"args\": {\"default\": \"\\t\", \"exact\": true} },\n\t{ \"keys\": [\"tab\"], \"command\": \"insert_best_completion\", \"args\": {\"default\": \"\\t\", \"exact\": false},\n\t\t\"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.tab_completion\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"not_regex_match\", \"operand\": \".*\\\\b[0-9]+$\", \"match_all\": true },\n\t\t]\n\t},\n\t{ \"keys\": [\"tab\"], \"command\": \"replace_completion_with_next_completion\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"last_command\", \"operator\": \"equal\", \"operand\": \"insert_best_completion\" },\n\t\t\t{ \"key\": \"setting.tab_completion\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"tab\"], \"command\": \"reindent\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_indent\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_match\", \"operand\": \"^$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_match\", \"operand\": \"^$\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"tab\"], \"command\": \"indent\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"text\", \"operator\": \"regex_contains\", \"operand\": \"\\n\" }\n\t\t]\n\t},\n\t{ \"keys\": [\"tab\"], \"command\": \"next_field\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"has_next_field\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"tab\"], \"command\": \"commit_completion\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"auto_complete_visible\" },\n\t\t\t{ \"key\": \"setting.auto_complete_commit_on_tab\" }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"shift+tab\"], \"command\": \"insert\", \"args\": {\"characters\": \"\\t\"} },\n\t{ \"keys\": [\"shift+tab\"], \"command\": \"unindent\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.shift_tab_unindent\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"shift+tab\"], \"command\": \"unindent\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_match\", \"operand\": \"^[\\t ]*\" }\n\t\t]\n\t},\n\t{ \"keys\": [\"shift+tab\"], \"command\": \"unindent\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"text\", \"operator\": \"regex_contains\", \"operand\": \"\\n\" }\n\t\t]\n\t},\n\t{ \"keys\": [\"shift+tab\"], \"command\": \"prev_field\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"has_prev_field\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"ctrl+]\"], \"command\": \"indent\" },\n\t{ \"keys\": [\"ctrl+[\"], \"command\": \"unindent\" },\n\n\t{ \"keys\": [\"insert\"], \"command\": \"toggle_overwrite\" },\n\n\t{ \"keys\": [\"ctrl+l\"], \"command\": \"expand_selection\", \"args\": {\"to\": \"line\"} },\n\t{ \"keys\": [\"ctrl+d\"], \"command\": \"find_under_expand\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+d\"], \"command\": \"find_under_expand_skip\" },\n\t{ \"keys\": [\"ctrl+shift+space\"], \"command\": \"expand_selection\", \"args\": {\"to\": \"scope\"} },\n\t{ \"keys\": [\"ctrl+shift+m\"], \"command\": \"expand_selection\", \"args\": {\"to\": \"brackets\"} },\n\t{ \"keys\": [\"ctrl+m\"], \"command\": \"move_to\", \"args\": {\"to\": \"brackets\"} },\n\t{ \"keys\": [\"ctrl+shift+j\"], \"command\": \"expand_selection\", \"args\": {\"to\": \"indentation\"} },\n\t{ \"keys\": [\"ctrl+shift+a\"], \"command\": \"expand_selection\", \"args\": {\"to\": \"tag\"} },\n\n\t{ \"keys\": [\"alt+.\"], \"command\": \"close_tag\" },\n\n\t{ \"keys\": [\"ctrl+alt+q\"], \"command\": \"toggle_record_macro\" },\n\t{ \"keys\": [\"ctrl+alt+shift+q\"], \"command\": \"run_macro\" },\n\n\t{ \"keys\": [\"ctrl+enter\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Add Line.sublime-macro\"} },\n\t{ \"keys\": [\"ctrl+shift+enter\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Add Line Before.sublime-macro\"} },\n\t{ \"keys\": [\"enter\"], \"command\": \"commit_completion\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"auto_complete_visible\" },\n\t\t\t{ \"key\": \"setting.auto_complete_commit_on_tab\", \"operand\": false }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"ctrl+p\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\", \"show_files\": true} },\n\t{ \"keys\": [\"ctrl+shift+p\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"command_palette\"} },\n\t{ \"keys\": [\"ctrl+alt+p\"], \"command\": \"prompt_select_workspace\" },\n\t{ \"keys\": [\"ctrl+r\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\", \"text\": \"@\"} },\n\t{ \"keys\": [\"ctrl+g\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\", \"text\": \":\"} },\n\t{ \"keys\": [\"ctrl+;\"], \"command\": \"show_overlay\", \"args\": {\"overlay\": \"goto\", \"text\": \"#\"} },\n\t{ \"keys\": [\"f12\"], \"command\": \"goto_definition\" },\n\t{ \"keys\": [\"shift+f12\"], \"command\": \"goto_reference\" },\n\t{ \"keys\": [\"ctrl+shift+r\"], \"command\": \"goto_symbol_in_project\" },\n\t{ \"keys\": [\"alt+-\"], \"command\": \"jump_back\" },\n\t{ \"keys\": [\"alt+shift+-\"], \"command\": \"jump_forward\" },\n\t{ \"keys\": [\"alt+keypad_minus\"], \"command\": \"jump_back\" },\n\t{ \"keys\": [\"alt+shift+keypad_minus\"], \"command\": \"jump_forward\" },\n\n\t{ \"keys\": [\"ctrl+i\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\": false} },\n\t{ \"keys\": [\"ctrl+shift+i\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"incremental_find\", \"reverse\": true} },\n\t{ \"keys\": [\"ctrl+f\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"find\", \"reverse\": false} },\n\t{ \"keys\": [\"ctrl+h\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"replace\", \"reverse\": false} },\n\t{ \"keys\": [\"ctrl+shift+h\"], \"command\": \"replace_next\" },\n\t{ \"keys\": [\"f3\"], \"command\": \"find_next\" },\n\t{ \"keys\": [\"shift+f3\"], \"command\": \"find_prev\" },\n\t{ \"keys\": [\"ctrl+f3\"], \"command\": \"find_under\" },\n\t{ \"keys\": [\"ctrl+shift+f3\"], \"command\": \"find_under_prev\" },\n\t{ \"keys\": [\"alt+f3\"], \"command\": \"find_all_under\" },\n\t{ \"keys\": [\"ctrl+e\"], \"command\": \"slurp_find_string\" },\n\t{ \"keys\": [\"ctrl+shift+e\"], \"command\": \"slurp_replace_string\" },\n\t{ \"keys\": [\"ctrl+shift+f\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"find_in_files\"} },\n\t{ \"keys\": [\"f4\"], \"command\": \"next_result\" },\n\t{ \"keys\": [\"shift+f4\"], \"command\": \"prev_result\" },\n\n\t{ \"keys\": [\"ctrl+.\"], \"command\": \"next_modification\" },\n\t{ \"keys\": [\"ctrl+,\"], \"command\": \"prev_modification\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+z\"], \"command\": \"revert_modification\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+/\"], \"command\": \"toggle_inline_diff\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+;\"], \"command\": \"toggle_inline_diff\", \"args\": { \"prefer_hide\": true } },\n\n\t{ \"keys\": [\"f6\"], \"command\": \"toggle_setting\", \"args\": {\"setting\": \"spell_check\"} },\n\t{ \"keys\": [\"ctrl+f6\"], \"command\": \"next_misspelling\" },\n\t{ \"keys\": [\"ctrl+shift+f6\"], \"command\": \"prev_misspelling\" },\n\n\t{ \"keys\": [\"ctrl+shift+up\"], \"command\": \"swap_line_up\" },\n\t{ \"keys\": [\"ctrl+shift+down\"], \"command\": \"swap_line_down\" },\n\n\t{ \"keys\": [\"ctrl+backspace\"], \"command\": \"delete_word\", \"args\": { \"forward\": false } },\n\t{ \"keys\": [\"ctrl+shift+backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete to Hard BOL.sublime-macro\"} },\n\n\t{ \"keys\": [\"ctrl+delete\"], \"command\": \"delete_word\", \"args\": { \"forward\": true } },\n\t{ \"keys\": [\"ctrl+shift+delete\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete to Hard EOL.sublime-macro\"} },\n\n\t{ \"keys\": [\"ctrl+/\"], \"command\": \"toggle_comment\", \"args\": { \"block\": false } },\n\t{ \"keys\": [\"ctrl+shift+/\"], \"command\": \"toggle_comment\", \"args\": { \"block\": true } },\n\n\t{ \"keys\": [\"ctrl+j\"], \"command\": \"join_lines\" },\n\t{ \"keys\": [\"ctrl+shift+d\"], \"command\": \"duplicate_line\" },\n\n\t{ \"keys\": [\"ctrl+`\"], \"command\": \"show_panel\", \"args\": {\"panel\": \"console\", \"toggle\": true} },\n\n\t{ \"keys\": [\"alt+/\"], \"command\": \"auto_complete\" },\n\t{ \"keys\": [\"alt+/\"], \"command\": \"replace_completion_with_auto_complete\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"last_command\", \"operator\": \"equal\", \"operand\": \"insert_best_completion\" },\n\t\t\t{ \"key\": \"auto_complete_visible\", \"operator\": \"equal\", \"operand\": false },\n\t\t\t{ \"key\": \"setting.tab_completion\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"ctrl+alt+shift+p\"], \"command\": \"show_scope_name\" },\n\n\t{ \"keys\": [\"f7\"], \"command\": \"build\" },\n\t{ \"keys\": [\"ctrl+b\"], \"command\": \"build\" },\n\t{ \"keys\": [\"ctrl+shift+b\"], \"command\": \"build\", \"args\": {\"select\": true} },\n\t{ \"keys\": [\"ctrl+break\"], \"command\": \"cancel_build\" },\n\n\t{ \"keys\": [\"ctrl+t\"], \"command\": \"transpose\" },\n\n\t{ \"keys\": [\"f9\"], \"command\": \"sort_lines\", \"args\": {\"case_sensitive\": false} },\n\t{ \"keys\": [\"ctrl+f9\"], \"command\": \"sort_lines\", \"args\": {\"case_sensitive\": true} },\n\n\t// Auto-pair quotes\n\t{ \"keys\": [\"\\\"\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"\\\"$0\\\"\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^(?:\\t| |\\\\)|]|\\\\}|>|$)\", \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"not_regex_contains\", \"operand\": \"[\\\"a-zA-Z0-9_]$\", \"match_all\": true },\n\t\t\t{ \"key\": \"eol_selector\", \"operator\": \"not_equal\", \"operand\": \"string.quoted.double - punctuation.definition.string.end\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"\\\"\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"\\\"${0:$SELECTION}\\\"\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": false, \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"\\\"\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\"\", \"match_all\": true },\n\t\t\t{ \"key\": \"selector\", \"operator\": \"not_equal\", \"operand\": \"punctuation.definition.string.begin\", \"match_all\": true },\n\t\t\t{ \"key\": \"eol_selector\", \"operator\": \"not_equal\", \"operand\": \"string.quoted.double - punctuation.definition.string.end\", \"match_all\": true },\n\t\t]\n\t},\n\t{ \"keys\": [\"backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete Left Right.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"\\\"$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\"\", \"match_all\": true },\n\t\t\t{ \"key\": \"selector\", \"operator\": \"not_equal\", \"operand\": \"punctuation.definition.string.begin\", \"match_all\": true },\n\t\t\t{ \"key\": \"eol_selector\", \"operator\": \"not_equal\", \"operand\": \"string.quoted.double - punctuation.definition.string.end\", \"match_all\": true },\n\t\t]\n\t},\n\n\t// Auto-pair single quotes\n\t{ \"keys\": [\"'\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"'$0'\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^(?:\\t| |\\\\)|]|\\\\}|>|$)\", \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"not_regex_contains\", \"operand\": \"['a-zA-Z0-9_]$\", \"match_all\": true },\n\t\t\t{ \"key\": \"eol_selector\", \"operator\": \"not_equal\", \"operand\": \"string.quoted.single - punctuation.definition.string.end\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"'\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"'${0:$SELECTION}'\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": false, \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"'\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^'\", \"match_all\": true },\n\t\t\t{ \"key\": \"selector\", \"operator\": \"not_equal\", \"operand\": \"punctuation.definition.string.begin\", \"match_all\": true },\n\t\t\t{ \"key\": \"eol_selector\", \"operator\": \"not_equal\", \"operand\": \"string.quoted.single - punctuation.definition.string.end\", \"match_all\": true },\n\t\t]\n\t},\n\t{ \"keys\": [\"backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete Left Right.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"'$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^'\", \"match_all\": true },\n\t\t\t{ \"key\": \"selector\", \"operator\": \"not_equal\", \"operand\": \"punctuation.definition.string.begin\", \"match_all\": true },\n\t\t\t{ \"key\": \"eol_selector\", \"operator\": \"not_equal\", \"operand\": \"string.quoted.single - punctuation.definition.string.end\", \"match_all\": true },\n\t\t]\n\t},\n\n\t// Auto-pair brackets\n\t{ \"keys\": [\"(\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"($0)\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^(?:\\t| |\\\\)|]|;|\\\\}|$)\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"(\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"(${0:$SELECTION})\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": false, \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\")\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\)\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete Left Right.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"\\\\($\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\)\", \"match_all\": true }\n\t\t]\n\t},\n\n\t// Auto-pair square brackets\n\t{ \"keys\": [\"[\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"[$0]\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^(?:\\t| |\\\\)|]|;|\\\\}|$)\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"[\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"[${0:$SELECTION}]\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": false, \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"]\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\]\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete Left Right.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"\\\\[$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\]\", \"match_all\": true }\n\t\t]\n\t},\n\n\t// Auto-pair curly brackets\n\t{ \"keys\": [\"{\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"{$0}\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^(?:\\t| |\\\\)|]|\\\\}|$)\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"{\"], \"command\": \"wrap_block\", \"args\": {\"begin\": \"{\", \"end\": \"}\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"indented_block\", \"match_all\": true },\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_match\", \"operand\": \"^$\", \"match_all\": true },\n\t\t]\n\t},\n\t{ \"keys\": [\"{\"], \"command\": \"insert_snippet\", \"args\": {\"contents\": \"{${0:$SELECTION}}\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": false, \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"}\"], \"command\": \"move\", \"args\": {\"by\": \"characters\", \"forward\": true}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\}\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete Left Right.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_match_enabled\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"\\\\{$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\}\", \"match_all\": true }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"enter\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Add Line in Braces.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_indent\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"\\\\{$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\}\", \"match_all\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"shift+enter\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Add Line in Braces.sublime-macro\"}, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_indent\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \"\\\\{$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^\\\\}\", \"match_all\": true }\n\t\t]\n\t},\n\n\t{ \"keys\": [\"enter\"], \"command\": \"auto_indent_tag\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_indent\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"selector\", \"operator\": \"equal\", \"operand\": \"punctuation.definition.tag.begin\", \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \">$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^</\", \"match_all\": true },\n\t\t]\n\t},\n\t{ \"keys\": [\"shift+enter\"], \"command\": \"auto_indent_tag\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.auto_indent\", \"operator\": \"equal\", \"operand\": true },\n\t\t\t{ \"key\": \"selection_empty\", \"operator\": \"equal\", \"operand\": true, \"match_all\": true },\n\t\t\t{ \"key\": \"selector\", \"operator\": \"equal\", \"operand\": \"punctuation.definition.tag.begin\", \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_contains\", \"operand\": \">$\", \"match_all\": true },\n\t\t\t{ \"key\": \"following_text\", \"operator\": \"regex_contains\", \"operand\": \"^</\", \"match_all\": true },\n\t\t]\n\t},\n\n\t{\n\t\t\"keys\": [\"alt+shift+1\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 1.0],\n\t\t\t\"rows\": [0.0, 1.0],\n\t\t\t\"cells\": [[0, 0, 1, 1]]\n\t\t}\n\t},\n\t{\n\t\t\"keys\": [\"alt+shift+2\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 0.5, 1.0],\n\t\t\t\"rows\": [0.0, 1.0],\n\t\t\t\"cells\": [[0, 0, 1, 1], [1, 0, 2, 1]]\n\t\t}\n\t},\n\t{\n\t\t\"keys\": [\"alt+shift+3\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 0.33, 0.66, 1.0],\n\t\t\t\"rows\": [0.0, 1.0],\n\t\t\t\"cells\": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]\n\t\t}\n\t},\n\t{\n\t\t\"keys\": [\"alt+shift+4\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 0.25, 0.5, 0.75, 1.0],\n\t\t\t\"rows\": [0.0, 1.0],\n\t\t\t\"cells\": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]\n\t\t}\n\t},\n\t{\n\t\t\"keys\": [\"alt+shift+8\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 1.0],\n\t\t\t\"rows\": [0.0, 0.5, 1.0],\n\t\t\t\"cells\": [[0, 0, 1, 1], [0, 1, 1, 2]]\n\t\t}\n\t},\n\t{\n\t\t\"keys\": [\"alt+shift+9\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 1.0],\n\t\t\t\"rows\": [0.0, 0.33, 0.66, 1.0],\n\t\t\t\"cells\": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]\n\t\t}\n\t},\n\t{\n\t\t\"keys\": [\"alt+shift+5\"],\n\t\t\"command\": \"set_layout\",\n\t\t\"args\":\n\t\t{\n\t\t\t\"cols\": [0.0, 0.5, 1.0],\n\t\t\t\"rows\": [0.0, 0.5, 1.0],\n\t\t\t\"cells\":\n\t\t\t[\n\t\t\t\t[0, 0, 1, 1], [1, 0, 2, 1],\n\t\t\t\t[0, 1, 1, 2], [1, 1, 2, 2]\n\t\t\t]\n\t\t}\n\t},\n\t{ \"keys\": [\"ctrl+1\"], \"command\": \"focus_group\", \"args\": { \"group\": 0 } },\n\t{ \"keys\": [\"ctrl+2\"], \"command\": \"focus_group\", \"args\": { \"group\": 1 } },\n\t{ \"keys\": [\"ctrl+3\"], \"command\": \"focus_group\", \"args\": { \"group\": 2 } },\n\t{ \"keys\": [\"ctrl+4\"], \"command\": \"focus_group\", \"args\": { \"group\": 3 } },\n\t{ \"keys\": [\"ctrl+5\"], \"command\": \"focus_group\", \"args\": { \"group\": 4 } },\n\t{ \"keys\": [\"ctrl+6\"], \"command\": \"focus_group\", \"args\": { \"group\": 5 } },\n\t{ \"keys\": [\"ctrl+7\"], \"command\": \"focus_group\", \"args\": { \"group\": 6 } },\n\t{ \"keys\": [\"ctrl+8\"], \"command\": \"focus_group\", \"args\": { \"group\": 7 } },\n\t{ \"keys\": [\"ctrl+9\"], \"command\": \"focus_group\", \"args\": { \"group\": 8 } },\n\t{ \"keys\": [\"ctrl+shift+1\"], \"command\": \"move_to_group\", \"args\": { \"group\": 0 } },\n\t{ \"keys\": [\"ctrl+shift+2\"], \"command\": \"move_to_group\", \"args\": { \"group\": 1 } },\n\t{ \"keys\": [\"ctrl+shift+3\"], \"command\": \"move_to_group\", \"args\": { \"group\": 2 } },\n\t{ \"keys\": [\"ctrl+shift+4\"], \"command\": \"move_to_group\", \"args\": { \"group\": 3 } },\n\t{ \"keys\": [\"ctrl+shift+5\"], \"command\": \"move_to_group\", \"args\": { \"group\": 4 } },\n\t{ \"keys\": [\"ctrl+shift+6\"], \"command\": \"move_to_group\", \"args\": { \"group\": 5 } },\n\t{ \"keys\": [\"ctrl+shift+7\"], \"command\": \"move_to_group\", \"args\": { \"group\": 6 } },\n\t{ \"keys\": [\"ctrl+shift+8\"], \"command\": \"move_to_group\", \"args\": { \"group\": 7 } },\n\t{ \"keys\": [\"ctrl+shift+9\"], \"command\": \"move_to_group\", \"args\": { \"group\": 8 } },\n\t{ \"keys\": [\"ctrl+0\"], \"command\": \"focus_side_bar\" },\n\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+up\"], \"command\": \"new_pane\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+shift+up\"], \"command\": \"new_pane\", \"args\": {\"move\": false} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+down\"], \"command\": \"close_pane\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+left\"], \"command\": \"focus_neighboring_group\", \"args\": {\"forward\": false} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+right\"], \"command\": \"focus_neighboring_group\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+shift+left\"], \"command\": \"move_to_neighboring_group\", \"args\": {\"forward\": false} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+shift+right\"], \"command\": \"move_to_neighboring_group\" },\n\n\t{ \"keys\": [\"alt+1\"], \"command\": \"select_by_index\", \"args\": { \"index\": 0 } },\n\t{ \"keys\": [\"alt+2\"], \"command\": \"select_by_index\", \"args\": { \"index\": 1 } },\n\t{ \"keys\": [\"alt+3\"], \"command\": \"select_by_index\", \"args\": { \"index\": 2 } },\n\t{ \"keys\": [\"alt+4\"], \"command\": \"select_by_index\", \"args\": { \"index\": 3 } },\n\t{ \"keys\": [\"alt+5\"], \"command\": \"select_by_index\", \"args\": { \"index\": 4 } },\n\t{ \"keys\": [\"alt+6\"], \"command\": \"select_by_index\", \"args\": { \"index\": 5 } },\n\t{ \"keys\": [\"alt+7\"], \"command\": \"select_by_index\", \"args\": { \"index\": 6 } },\n\t{ \"keys\": [\"alt+8\"], \"command\": \"select_by_index\", \"args\": { \"index\": 7 } },\n\t{ \"keys\": [\"alt+9\"], \"command\": \"select_by_index\", \"args\": { \"index\": 8 } },\n\t{ \"keys\": [\"alt+0\"], \"command\": \"select_by_index\", \"args\": { \"index\": 9 } },\n\n\t{ \"keys\": [\"f2\"], \"command\": \"next_bookmark\" },\n\t{ \"keys\": [\"shift+f2\"], \"command\": \"prev_bookmark\" },\n\t{ \"keys\": [\"ctrl+f2\"], \"command\": \"toggle_bookmark\" },\n\t{ \"keys\": [\"ctrl+shift+f2\"], \"command\": \"clear_bookmarks\" },\n\t{ \"keys\": [\"alt+f2\"], \"command\": \"select_all_bookmarks\" },\n\n\t{ \"keys\": [\"ctrl+shift+k\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete Line.sublime-macro\"} },\n\n\t{ \"keys\": [\"alt+q\"], \"command\": \"wrap_lines\" },\n\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+u\"], \"command\": \"upper_case\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+l\"], \"command\": \"lower_case\" },\n\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+space\"], \"command\": \"set_mark\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+a\"], \"command\": \"select_to_mark\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+w\"], \"command\": \"delete_to_mark\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+x\"], \"command\": \"swap_with_mark\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+y\"], \"command\": \"yank\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+k\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete to Hard EOL.sublime-macro\"} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+backspace\"], \"command\": \"run_macro_file\", \"args\": {\"file\": \"res://Packages/Default/Delete to Hard BOL.sublime-macro\"} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+g\"], \"command\": \"clear_bookmarks\", \"args\": {\"name\": \"mark\"} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+c\"], \"command\": \"show_at_center\" },\n\n\t{ \"keys\": [\"ctrl++\"], \"command\": \"increase_font_size\" },\n\t{ \"keys\": [\"ctrl+=\"], \"command\": \"increase_font_size\" },\n\t{ \"keys\": [\"ctrl+-\"], \"command\": \"decrease_font_size\" },\n\n\t{ \"keys\": [\"alt+shift+w\"], \"command\": \"insert_snippet\", \"args\": { \"name\": \"Packages/XML/Snippets/long-tag.sublime-snippet\" } },\n\n\t{ \"keys\": [\"ctrl+shift+[\"], \"command\": \"fold\" },\n\t{ \"keys\": [\"ctrl+shift+]\"], \"command\": \"unfold\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+1\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 1} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+2\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 2} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+3\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 3} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+4\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 4} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+5\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 5} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+6\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 6} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+7\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 7} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+8\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 8} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+9\"], \"command\": \"fold_by_level\", \"args\": {\"level\": 9} },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+0\"], \"command\": \"unfold_all\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+j\"], \"command\": \"unfold_all\" },\n\t{ \"keys\": [\"ctrl+k\", \"ctrl+t\"], \"command\": \"fold_tag_attributes\" },\n\n\t{ \"keys\": [\"context_menu\"], \"command\": \"context_menu\" },\n\n\t{ \"keys\": [\"alt+c\"], \"command\": \"toggle_case_sensitive\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.is_widget\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"alt+r\"], \"command\": \"toggle_regex\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.is_widget\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"alt+w\"], \"command\": \"toggle_whole_word\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.is_widget\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\t{ \"keys\": [\"alt+a\"], \"command\": \"toggle_preserve_case\", \"context\":\n\t\t[\n\t\t\t{ \"key\": \"setting.is_widget\", \"operator\": \"equal\", \"operand\": true }\n\t\t]\n\t},\n\n\t// Find panel key bindings\n\t{ \"keys\": [\"enter\"], \"command\": \"find_next\", \"context\":\n\t\t[{\"key\": \"panel\", \"operand\": \"find\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"shift+enter\"], \"command\": \"find_prev\", \"context\":\n\t\t[{\"key\": \"panel\", \"operand\": \"find\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"alt+enter\"], \"command\": \"find_all\", \"args\": {\"close_panel\": true},\n\t\t \"context\": [{\"key\": \"panel\", \"operand\": \"find\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\n\t// Replace panel key bindings\n\t{ \"keys\": [\"enter\"], \"command\": \"find_next\", \"context\":\n\t\t[{\"key\": \"panel\", \"operand\": \"replace\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"shift+enter\"], \"command\": \"find_prev\", \"context\":\n\t\t[{\"key\": \"panel\", \"operand\": \"replace\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"alt+enter\"], \"command\": \"find_all\", \"args\": {\"close_panel\": true},\n\t\t\"context\": [{\"key\": \"panel\", \"operand\": \"replace\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"ctrl+alt+enter\"], \"command\": \"replace_all\", \"args\": {\"close_panel\": true},\n\t\t \"context\": [{\"key\": \"panel\", \"operand\": \"replace\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\n\t// Incremental find panel key bindings\n\t{ \"keys\": [\"enter\"], \"command\": \"hide_panel\", \"context\":\n\t\t[{\"key\": \"panel\", \"operand\": \"incremental_find\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"shift+enter\"], \"command\": \"find_prev\", \"context\":\n\t\t[{\"key\": \"panel\", \"operand\": \"incremental_find\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"alt+enter\"], \"command\": \"find_all\", \"args\": {\"close_panel\": true},\n\t\t\"context\": [{\"key\": \"panel\", \"operand\": \"incremental_find\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\n\t// Find in Files panel key bindings\n\t{ \"keys\": [\"alt+enter\"], \"command\": \"find_all\",\n\t\t \"context\": [{\"key\": \"panel\", \"operand\": \"find_in_files\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\t{ \"keys\": [\"ctrl+alt+enter\"], \"command\": \"replace_all\",\n\t\t \"context\": [{\"key\": \"panel\", \"operand\": \"find_in_files\"}, {\"key\": \"panel_has_focus\"}]\n\t},\n\n\t// HTML, XML close tag\n\t{ \"keys\": [\"/\"], \"command\": \"close_tag\", \"args\": { \"insert_slash\": true }, \"context\":\n\t\t[\n\t\t\t{ \"key\": \"selector\", \"operator\": \"equal\", \"operand\": \"(text.html, text.xml) - string - comment\", \"match_all\": true },\n\t\t\t{ \"key\": \"preceding_text\", \"operator\": \"regex_match\", \"operand\": \".*<$\", \"match_all\": true },\n\t\t\t{ \"key\": \"setting.auto_close_tags\" }\n\t\t]\n\t}\n]\n",
-					"file": "/home/ordanax/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
-					"file_size": -1,
-					"file_write_time": -1,
+					"file": "/home/ordanax/MEGA/001_ПРОГРАММА/000_БП.todo",
 					"settings":
 					{
-						"buffer_size": 36983,
-						"line_ending": "Unix",
-						"read_only": true,
-						"scratch": true
+						"buffer_size": 3612,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/home/ordanax/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+					"file": "/home/ordanax/.config/vlc/vlcrc",
 					"settings":
 					{
-						"buffer_size": 38415,
-						"encoding": "UTF-8",
+						"buffer_size": 88118,
+						"encoding": "UTF-8 with BOM",
 						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "# Next (string)\nkey-next=Media Next Track\n# Previous (string)\nkey-prev=Media Prev Track\n# Audio output module (string)\naout=alsa\n# Remember the audio volume (boolean)\nvolume-save=100",
+					"settings":
+					{
+						"buffer_size": 182,
+						"line_ending": "Unix",
+						"name": "# Next (string)"
 					}
 				}
 			],
@@ -215,14 +351,6 @@
 				"last_filter": "",
 				"selected_items":
 				[
-					[
-						"Package Control: Install Package",
-						"Package Control: Install Package"
-					],
-					[
-						"Package Control",
-						"Install Package Control"
-					]
 				],
 				"width": 0.0
 			},
@@ -244,25 +372,106 @@
 			},
 			"file_history":
 			[
-				"/home/ordanax/.config/sublime-text-3/Packages/PlainTasks/Default (Linux).sublime-keymap",
-				"/home/ordanax/.config/sublime-text-3/Packages/PlainTasks/PlainTasks (Linux).sublime-settings",
-				"/home/ordanax/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
-				"/home/ordanax/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
-				"/home/ordanax/.config/sublime-text-3/Packages/User/PlainTasks.sublime-settings",
-				"/home/ordanax/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+				"/home/ordanax/.config/vlc_back/vlc-qt-interface.conf",
+				"/home/ordanax/.config/i3/config",
+				"/home/ordanax/.config/vlc_back/vlcrc",
+				"/home/ordanax/.bashrc",
+				"/var/log/pacman.log",
 				"/home/ordanax/MEGA/001_ПРОГРАММА/help.todo",
-				"/home/ordanax/MEGA/001_ПРОГРАММА/000_БП_НА_НЕДЕЛЮ.todo",
-				"/home/ordanax/MEGA/IP_TV_&_ONLINE_RADIO/synthpop_radio.m3u",
-				"/home/ordanax/MEGA/IP_TV_&_ONLINE_RADIO/RADIO.m3u",
-				"/home/ordanax/MEGA/IP_TV_&_ONLINE_RADIO/AllRadio.m3u",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/keyboards.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/parole.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/thunar-volman.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/xfcethemer.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml",
-				"/home/ordanax/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml"
+				"/home/ordanax/.config/polybar/scripts/vlc.py",
+				"/home/ordanax/.config/polybar/scripts/vpn-openvpn-isrunning.sh",
+				"/home/ordanax/.config/polybar/config",
+				"/home/ordanax/Музыка/best.m3u",
+				"/home/ordanax/.config/polybar/scripts/popup-calendar.sh",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpris-tail/README.md",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpv-tail/README.md",
+				"/home/ordanax/.config/polybar/scripts/updates-pacman-aurhelper.sh",
+				"/home/ordanax/.config/polybar/scripts/btc",
+				"/home/ordanax/.config/polybar/scripts/battery-combined-tlp.sh",
+				"/home/ordanax/.config/polybar/scripts/openweathermap-fullfeatured.sh",
+				"/home/ordanax/MEGA/PYTHON/time_of_day.sh",
+				"/home/ordanax/.config/polybar/scripts/player-mpris-tail.py",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpris-simple/player-mpris-simple.sh",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpv-tail/player-mpv-tail.py",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-moc/player-moc.sh",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-moc/README.md",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-mpris-tail/player-mpris-tail.py",
+				"/home/ordanax/MEGA/001_ПРОГРАММА/000_БП.todo",
+				"/home/ordanax/Загрузки/polybar-scripts-master/polybar-scripts/player-cmus/README.md",
+				"/home/ordanax/.mplayer/config",
+				"/home/ordanax/.config/polybar/scripts/config",
+				"/home/ordanax/Загрузки/player-mpris-tail.py",
+				"/home/ordanax/.mpd/mpd.conf",
+				"/home/ordanax/Загрузки/ncmpcpp-master/INSTALL",
+				"/home/ordanax/Загрузки/ncmpcpp-master/NEWS",
+				"/home/ordanax/Загрузки/ncmpcpp-master/config.sub",
+				"/home/ordanax/.ncmpcpp/error.log",
+				"/home/ordanax/Загрузки/ncmpcpp-master/src/charset.cpp",
+				"/home/ordanax/.git/HEAD",
+				"/home/ordanax/.git/config",
+				"/home/ordanax/MEGA/ПАПКА ОБМЕНА/Объявления Хироши.txt",
+				"/home/ordanax/.config/picom.conf",
+				"/home/ordanax/Загрузки/000",
+				"/home/ordanax/Документы/sublime-text-3/Packages/PlainTasks/Readme.md",
+				"/home/ordanax/Документы/sublime-text-3/Packages/PlainTasks/PlainTasks.py",
+				"/home/ordanax/Загрузки/archlive/airootfs/etc/calamares/branding/a4u/branding.desc",
+				"/home/ordanax/archlive/airootfs/usr/bin/a4u-welcome",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/share/calamares/branding/a4u/branding.desc",
+				"/home/ordanax/Загрузки/calamares-master/src/branding/a4u/branding.desc",
+				"/home/ordanax/Загрузки/archlive/packages.x86_64",
+				"/home/ordanax/Загрузки/calamares-master/pkg/PKGBUILD",
+				"/home/ordanax/Загрузки/calamares-master/settings.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/netinstall/netinstall.conf",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/share/calamares/branding/A4u/branding.desc",
+				"/home/ordanax/Загрузки/archlive/airootfs/etc/calamares/branding/A4u/branding.desc",
+				"/home/ordanax/Загрузки/calamares-master/data/calamares.desktop",
+				"/home/ordanax/Загрузки/calamares-master/data/calamares_polkit",
+				"/home/ordanax/archlive/packages.x86_64",
+				"/home/ordanax/Загрузки/calamares-ctlos/data/calamares_polkit",
+				"/home/ordanax/Загрузки/calamares-ctlos/src/branding/ctlos/branding.desc",
+				"/home/ordanax/Загрузки/calamares-ctlos/data/calamares.desktop",
+				"/home/ordanax/Загрузки/calamares-mine/calamares/data/calamares.desktop",
+				"/home/ordanax/Загрузки/calamares-mine/calamares/data/calamares_polkit",
+				"/home/ordanax/Загрузки/calamares-mine/calamares/pkg/PKGBUILD",
+				"/home/ordanax/Загрузки/calamares-master/calamares/pkg/PKGBUILD",
+				"/home/ordanax/packages-pacman.txt",
+				"/home/ordanax/packages-aur.txt",
+				"/home/ordanax/Загрузки/pack.sh",
+				"/home/ordanax/Загрузки/calamares-master/data/49-nopasswd-calamares.rules",
+				"/home/ordanax/archlive/mkarchiso",
+				"/home/ordanax/Загрузки/archlive/mkarchiso",
+				"/home/ordanax/Загрузки/Новый каталог/calamares-master/calamares/pkg/PKGBUILD",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/packages/packages.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/removeuser/removeuser.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/shellprocess/shellprocess.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/unpackfs/unpackfs.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/users/users.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/welcome/welcome.conf",
+				"/home/ordanax/Загрузки/calamares-master/src/modules/bootloader/bootloader.conf",
+				"/home/ordanax/Загрузки/Новый каталог/calamares-master/calamares/pack.sh",
+				"/home/ordanax/Загрузки/Revolution_v.5.1.4(3.0)/read_me.txt",
+				"/home/ordanax/.config/autostart/ctlos-welcome.desktop",
+				"/home/ordanax/.config/autostart/a4u-welcome.desktop",
+				"/home/ordanax/Загрузки/archlive/airootfs/etc/skel/.config/autostart/a4u-welcome.desktop",
+				"/home/ordanax/Desktop/ctlos-welcome",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/bin/ctlos-welcome",
+				"/home/ordanax/Загрузки/archlive/airootfs/usr/bin/a4u-welcome",
+				"/home/ordanax/Desktop/a4u-welcome",
+				"/home/ordanax/001/ctlos-welcome",
+				"/home/ordanax/Загрузки/a4u-welcome",
+				"/home/ordanax/Загрузки/ctlos-welcome",
+				"/home/ordanax/.config/autostart/xflux.desktop",
+				"/home/ordanax/.config/autostart/conky.desktop",
+				"/home/ordanax/Загрузки/ctlos-welcome.desktop",
+				"/home/ordanax/001/.config/autostart/ctlos-welcome.desktop",
+				"/home/ordanax/001/usr/bin/a4u-welcome",
+				"/usr/bin/a4u-welcome",
+				"/home/ordanax/001/usr/share/applications/calamares.desktop",
+				"/home/ordanax/001/usr/share/applications/ctlos-welcome.desktop",
+				"/usr/share/applications/calamares.desktop",
+				"/usr/share/applications/ctlos-welcome.desktop",
+				"/home/ordanax/.config/autostart/megasync.desktop",
+				"/home/ordanax/done.txt"
 			],
 			"find":
 			{
@@ -270,9 +479,11 @@
 			},
 			"find_in_files":
 			{
-				"height": 0.0,
+				"height": 139.0,
 				"where_history":
 				[
+					"",
+					"/home/ordanax/Загрузки/calamares-master"
 				]
 			},
 			"find_state":
@@ -280,6 +491,62 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"audio",
+					"pulse",
+					"prev",
+					"(in %)",
+					"100",
+					"Volume",
+					"mpv",
+					"uchardet",
+					"rubberband",
+					"vamp-plugin-sdk",
+					"fftw",
+					"openmpi",
+					"openssh",
+					"ldns",
+					"dnssec-anchors",
+					"hwloc",
+					"mujs",
+					"wshowkeys-git",
+					"boost",
+					"cmake",
+					"rhash",
+					"meson",
+					"ninja",
+					"гром",
+					"@today",
+					"cvlc",
+					"vlc",
+					"next",
+					"mpd",
+					"stop",
+					"~/polybar-scripts/",
+					"cal",
+					"haron",
+					"неделю",
+					"Юле",
+					"opacity",
+					"opa",
+					"picom",
+					"пункт",
+					"отметить",
+					"net",
+					"A4u",
+					"ctl",
+					"install",
+					"4u-welcome.desktop",
+					"don",
+					"ctl",
+					"calamares-master/calamares/pkg/src/calamares-3.2.23",
+					"wiki",
+					"news",
+					"ctl",
+					"ctlos",
+					"ctl",
+					"pyqt5",
+					"ctlos-welcome/img/",
+					"ctlos"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -287,6 +554,13 @@
 				"regex": false,
 				"replace_history":
 				[
+					"",
+					"~/.config/polybar/scripts/",
+					"ordanax",
+					"yutube",
+					"a4u",
+					"a4u-welcome/img/",
+					"a4u"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -297,76 +571,96 @@
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 1,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/home/ordanax/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+							"file": "/home/ordanax/MEGA/001_ПРОГРАММА/000_БП.todo",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 36983,
+								"buffer_size": 3612,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										36983,
-										36983
+										1217,
+										1217
 									]
 								],
 								"settings":
 								{
-									"edit_settings_other_view_id": 31,
-									"edit_settings_view": "base",
-									"mini_diff": false,
-									"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+									"plain_tasks_remain_time_phantoms":
+									[
+									],
+									"spell_check": false,
+									"syntax": "Packages/PlainTasks/PlainTasks.sublime-syntax",
+									"word_wrap": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/ordanax/.config/vlc/vlcrc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 88118,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										32364,
+										32369
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 25794.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 182,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										182,
+										182
+									]
+								],
+								"settings":
+								{
+									"auto_name": "# Next (string)",
+									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 1,
-							"type": "text"
-						}
-					]
-				},
-				{
-					"selected": 0,
-					"sheets":
-					[
-						{
-							"buffer": 1,
-							"file": "/home/ordanax/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 38415,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"edit_settings_other_view_id": 30,
-									"edit_settings_view": "user",
-									"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
 							"type": "text"
 						}
 					]
@@ -389,18 +683,11 @@
 						0,
 						1,
 						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.5,
 					1.0
 				],
 				"rows":
@@ -413,6 +700,10 @@
 			"output.find_results":
 			{
 				"height": 0.0
+			},
+			"output.unsaved_changes":
+			{
+				"height": 117.0
 			},
 			"pinned_build_system": "",
 			"position": "0,1,0,0,0,0,0,0,0,1366,768",
@@ -428,6 +719,10 @@
 				"last_filter": "",
 				"selected_items":
 				[
+					[
+						"",
+						"~/Документы/sublime-text-3/Packages/PlainTasks/Readme.md"
+					]
 				],
 				"width": 0.0
 			},
@@ -449,20 +744,20 @@
 				],
 				"width": 0.0
 			},
-			"selected_group": 1,
+			"selected_group": 0,
 			"settings":
 			{
 			},
-			"show_minimap": true,
+			"show_minimap": false,
 			"show_open_files": false,
 			"show_tabs": true,
-			"side_bar_visible": false,
+			"side_bar_visible": true,
 			"side_bar_width": 150.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 2,
+			"window_id": 1,
 			"workspace_name": ""
 		}
 	],
