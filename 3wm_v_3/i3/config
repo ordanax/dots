@@ -4,13 +4,13 @@ set $mod Mod4
 ### Автозапуск программ
 exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
 exec --no-startup-id feh --bg-scale /usr/share/backgrounds/bg.jpg
-exec --no-startup-id exec picom -b
+exec --no-startup-id exec picom -b --backend glx --vsync --xrender-sync-fence --glx-no-rebind-pixmap --use-damage --glx-no-stencil
+
 exec --no-startup-id xrandr --dpi 100
 exec --no-startup-id flameshot
 exec --no-startup-id sbxkb
 exec --no-startup-id xflux -l 55.7, -g 37.6 -k 2000
 exec --no-startup-id megasync
-#exec --no-startup-id todoist
 
 ### Отлючение заголовков
 default_border pixel
@@ -22,25 +22,33 @@ bindsym --release button2 kill
 bindsym $mod+F1 exec --no-startup-id firefox
 bindsym $mod+F2 exec --no-startup-id pcmanfm
 bindsym $mod+F3 exec --no-startup-id subl3
+bindsym $mod+Ctrl+F3 exec --no-startup-id killall -s 6 subl3
 bindsym $mod+F4 exec --no-startup-id cherrytree
-bindsym $mod+F8 exec --no-startup-id chromium
-bindsym $mod+F9 exec --no-startup-id trello
-bindsym $mod+F10 exec --no-startup-id todoist
+bindsym $mod+F5 exec --no-startup-id chromium
+bindsym $mod+Menu exec --no-startup-id trello; workspace 9
+bindsym Menu exec --no-startup-id todoist; workspace 10
 
+bindsym $mod+Home exec --no-startup-id cvlc
+bindsym $mod+Prior exec --no-startup-id killall -s 6 vlc
 bindsym $mod+t exec --no-startup-id telegram-desktop
 bindsym $mod+Ctrl+t exec --no-startup-id killall -s 6 telegram-desktop
 bindsym $mod+w exec --no-startup-id libreoffice --writer
 bindsym $mod+c exec --no-startup-id libreoffice --calc
 bindsym Print exec --no-startup-id flameshot gui
-bindsym $mod+Prior exec --no-startup-id killall -s 6 vlc
-bindsym $mod+Home exec --no-startup-id cvlc
-bindsym $mod+Menu exec --no-startup-id i3lock-fancy
-bindsym Home exec --no-startup-id deadbeef --play --random
-bindsym Next exec --no-startup-id deadbeef --prev 
-bindsym End exec --no-startup-id deadbeef --next
-bindsym Prior exec --no-startup-id deadbeef --quit & killall -s 6 vlc
 bindsym $mod+v exec --no-startup-id sudo protonvpn c -f
 bindsym $mod+Ctrl+v exec --no-startup-id sudo protonvpn disconnect
+bindsym $mod+b exec --no-startup-id bleachbit
+
+### vlc 
+bindsym XF86AudioPlay exec --no-startup-id cvlc ~/Музыка/000_My_The_Best
+bindsym Home exec --no-startup-id cvlc ~/Музыка/best.m3u
+bindsym XF86AudioStop exec --no-startup-id  killall -s 6 vlc
+
+# Media player controls
+## bindsym XF86AudioPlay exec playerctl play
+## bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 ## Specific workspaces
 #assign [window_role="browser"] $ws1
@@ -53,7 +61,7 @@ assign [window_role="gimp"] $ws5
 #assign [class="(?i)telegram|discord"] $ws6
 
 ### Перекидывает открытое окно на нужный рабочий стол
-for_window [class="todoist"] move to workspace $ws10
+#for_window [class="todoist"] move to workspace $ws10
 
 ### Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
