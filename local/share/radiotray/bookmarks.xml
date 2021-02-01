@@ -1,0 +1,76 @@
+<bookmarks>
+<group name="root">
+    <group name="MINE"><bookmark name="air.synthez.net" url="http://air.synthez.net:8888/192"/><bookmark name="195.91.220.35:8005" url="http://195.91.220.35:8005/live192"/><bookmark name="radiorecord 1" url="http://online.radiorecord.ru:8102/ps_128"/><bookmark name="Radiorecord 2" url="http://online.radiorecord.ru:8101/rr_128"/><bookmark name="Radiorecord 3" url="http://online.radiorecord.ru:8101/rr_128"/><bookmark name="Sanfm.ru" url="http://sanfm.ru:8000/trance"/><bookmark name="Schizoid.in" url="http://schizoid.in:8000/schizoidv"/><bookmark name="62.183.34.109" url="http://62.183.34.109:8000/radio107.mp3"/><bookmark name="Radiojamfm.ru" url="http://online.radiojamfm.ru:8000/jam_aacplus?type=.flv"/><bookmark name="Soullive.ru" url="http://radio.soullive.ru:8000/soul128"/><bookmark name="Depeche Mode" url="http://relay.myradio.ua:8000/depechemode192.mp3?v=3"/><bookmark name="Streamr.ru" url="http://ep256.streamr.ru"/></group><group name="Techno / Electronic">
+        <bookmark name="Drone Zone" url="http://somafm.com/dronezone.pls"/>
+        <bookmark name="Space Station Soma" url="http://somafm.com/spacestation.pls"/>
+        <bookmark name="cliqhop idm" url="http://somafm.com/cliqhop.pls"/>
+        <bookmark name="Black Rock FM" url="http://somafm.com/brfm.pls"/>
+        <bookmark name="New Dance Radio" url="http://jbstream.net/tunein.php/blackoutworm/playlist.asx"/>
+	<bookmark name="DubStep Beyond" url="http://somafm.com/play/dubstep32"/>
+    </group>
+    <group name="Jazz">
+        <bookmark name="Smooth Jazz" url="http://smoothjazz.com/streams/smoothjazz_128.pls"/>
+        <bookmark name="SKY.fm Piano Jazz" url="http://listen.sky.fm/public1/pianojazz.pls"/>
+        <bookmark name="SKY.fm Smooth Jazz" url="http://listen.sky.fm/public1/smoothjazz.pls"/>
+        <bookmark name="Sonic Universe" url="http://somafm.com/sonicuniverse.pls"/>
+        <bookmark name="Blue FM" url="http://bluefm.net/listen.pls"/>
+        <bookmark name="The Breeze" url="mmsh://wms-rly.181.fm/181-breeze?MSWMExt=.asf"/>
+    </group>
+    <group name="Latin">
+        <bookmark name="Onda Tropical" url="http://monkey.wavestreamer.com:2958/listen.m3u?sid=1"/>
+        <bookmark name="Top Latino Radio" url="http://online.radiodifusion.net:8020/listen.pls"/>
+        <bookmark name="Salsa Stream" url="http://listen.sky.fm/public3/salsa.pls"/>
+        <bookmark name="Reggaeton 24/7" url="http://cc.net2streams.com/tunein.php/reggaeton/playlist.pls"/>
+        <bookmark name="Suave" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1572149"/>
+    </group>
+    <group name="Classic Rock">
+        <bookmark name="181.FM Classic Hits" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=153501"/>
+        <bookmark name=".977 Classic Rock" url="http://www.977music.com/tunein/web/classicrock.asx"/>
+        <bookmark name="80s Sky.FM" url="http://listen.sky.fm/public3/the80s.pls"/>
+        <bookmark name="Covers" url="http://somafm.com/covers.pls"/>
+    </group>
+    <group name="Classical">
+        <bookmark name="KDFC" url="http://provisioning.streamtheworld.com/pls/KDFCFM.pls"/>
+        <bookmark name="Classic FM" url="http://media-ice.musicradio.com/ClassicFMMP3.m3u"/>
+        <bookmark name="WCPE" url="http://www.ibiblio.org/wcpe/wcpe.pls"/>
+        <bookmark name="CINEMIX" url="http://cinemix.us/cine.asx"/>
+        <bookmark name="SKY.fm Soundtracks" url="http://listen.sky.fm/public1/soundtracks.pls"/>
+        <bookmark name="SKY.fm Mostly Classical" url="http://listen.sky.fm/public1/classical.pls"/>
+    </group>
+    <group name="Pop / Rock">
+        <bookmark name="Radio Paradise" url="http://www.radioparadise.com/musiclinks/rp_128.m3u"/>
+        <bookmark name=".977 The Hitz Channel" url="http://www.977music.com/tunein/web/hitz.asx"/>
+        <bookmark name="Enjoy Station" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1463895"/>
+        <bookmark name="SKY.fm Top Hits" url="http://listen.sky.fm/public1/tophits.pls"/>
+        <bookmark name="Indie Pop Rocks!" url="http://somafm.com/indiepop.pls"/>
+        <bookmark name="PopTron" url="http://somafm.com/poptron.pls"/>
+    </group>
+    <group name="Oldies">
+        <bookmark name="AM 1710" url="http://lin2.ash.fast-serv.com:9022/listen.pls"/>
+        <bookmark name="AM 600" url="http://redmanstreams.com:8740/listen.pls"/>
+        <bookmark name="WNAR" url="http://live.wnar-am.com:8500/listen.pls"/>
+        <bookmark name="SKY.fm Oldies" url="http://listen.sky.fm/public1/oldies.pls"/>
+    </group>
+    <group name="Chill">
+        <bookmark name="181.FM" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=35402"/>
+        <bookmark name="Lounge Radio" url="http://www.lounge-radio.com/listen128.m3u"/>
+        <bookmark name="Beat Blender" url="http://somafm.com/beatblender.pls"/>
+        <bookmark name="Secret Agent" url="http://somafm.com/secretagent.pls"/>
+        <bookmark name="Groove Salad" url="http://somafm.com/groovesalad.pls"/>
+        <bookmark name="Illinois Street Lounge" url="http://somafm.com/illstreet.pls"/>
+    </group>
+    <group name="Country">
+        <bookmark name="SKY.fm Country" url="http://listen.sky.fm/public1/country.pls"/>
+        <bookmark name="Boot Liquor" url="http://somafm.com/bootliquor.pls"/>
+        <bookmark name="US 181" url="mmsh://wms-rly.181.fm/181-us181?MSWMExt=.asf"/>
+        <bookmark name="Real Country" url="mmsh://wms-rly.181.fm/181-realcountry?MSWMExt=.asf"/>
+        <bookmark name="Highway 181" url="mmsh://wms-rly.181.fm/181-highway?MSWMExt=.asf"/>
+        <bookmark name="Country 108" url="http://www.country108.com/listen.pls"/>
+    </group>
+    <group name="Community">
+        <bookmark name="Jupiter Broadcast" url="http://jblive.fm/"/>
+        <bookmark name="WCRS LPFM Columbus" url="http://sh4.audio-stream.com/tunein.php/pleonard/playlist.pls"/>
+        <bookmark name="WBEZ" url="http://wbez.ic.llnwd.net/stream/wbez_91_5_fm.pls"/>
+    </group>
+</group>
+</bookmarks>
