@@ -1,0 +1,437 @@
+######################################
+#             Arch Linux             #
+######################################
+#;;;;;;;;;;;;;;POLYBAR;;;;;;;;;;;;;;;#
+######################################
+## ОСНОВНЫЕ НАСТРОЙКИ | ВНЕШНИЙ ВИД ##
+######################################
+# https://github.com/polybar/polybar #
+######################################
+#   Для иконок используем шрифт:     #
+#       ttf-font-awesome             #
+# https://fontawesome.com/cheatsheet #
+# sudo pacman -S ttf-font-awesome    #
+############################################################################################################
+#https://github.com/GhostKraft/i3gaps-config/tree/master/BlueZ-theme
+
+[settings]
+pseudo-transparency = true
+
+#Цвета панели
+[colors]
+foreground = #00ff06
+background = #aa2f343f 
+background-alt = #1463B6
+foreground-alt = #568DDD
+primary = #00FF00
+secondary = #218DC8
+alert = #bd2c40
+
+
+#размеры панели
+#указываем название бара к которому будет обрящаться скрипт автозапуска launch.sh в стоке [bar/название бара]
+[bar/example]
+#monitor = ${env:MONITOR:HDMI-1}
+
+#Ширина панели
+width = 100%
+
+#высота панели 
+height = 20
+
+ 
+#offset-x = 1%
+#offset-y = 1%
+
+
+#зафиксированый центр или динамический true / false
+fixed-center = true 
+
+#локаль панели отвечает за вывод некотоых данных например дата
+locale = ru_RU.UTF-8 
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+
+#размер нижней линии под модулями
+line-size = 2
+;line-color = #f00
+
+
+#отступы содержимого панели от края
+padding-left = 0
+padding-right = 0
+
+
+#отступы между модулями
+module-margin-left = 1
+module-margin-right = 1
+
+
+#Шрифты
+font-0 = Iosevka Nerd Font:style=Medium:size=10;2.5
+font-1 = FontAwesome5Free:style=Solid:size=7.5;2.5
+font-2 = Weather Icons:size=7;2
+font-3 = FontAwesome5Brands:style=Solid:size=7.5;2.5
+
+
+
+#######################################
+## РАСПОЛОЖЕНИЕ И АКТИВАЦИЯ МОДУЛЕЙ  ##
+#######################################
+modules-left = i3 menu updates-pacman-aurhelper 
+modules-center = title openweathermap-fullfeatured
+modules-right = filesystem cpu memory temperature_core2 temperature_core3 pulseaudio flux  battery-combined-tlp xkeyboard powermenu popup-calendar
+
+
+
+#системный лоток расположение tray иконок none|right|center|left
+tray-position = right
+tray-padding = 2
+tray-detached = false
+
+#tray-background = #0063ff
+
+
+#########################
+## ПОДКЛЮЧЕНЫЕ МОДУЛИ  ##
+#########################
+
+[module/menu]
+type = custom/menu
+
+format-spacing = 2
+
+label-open = 
+label-open-foreground = #2E9EF4
+label-close = 
+format-padding = 1
+
+label-separator = 𠘻
+#label-separator-foreground = #dfecfa
+
+### меню #######
+menu-0-0 = 
+menu-0-0-exec = libreoffice --calc /home/ordanax/MEGA/000_ADMIN/ОТДЕЛЕНИЕ\ 1/СТАТИСТИКА+ПРАЙС/ИСХОДЯЩИЙ.ods
+
+menu-0-1 = 
+menu-0-1-exec = libreoffice --calc /home/ordanax/MEGA/000_ADMIN/ОТДЕЛЕНИЕ\ 7/000_АДМНШКАЛЫ/2021\ \-\ ПРОГРАММА.odt
+
+menu-0-2 = 
+menu-0-2-exec = todoist
+
+menu-0-3 =  
+menu-0-3-exec = galculator
+
+menu-0-4 = 
+menu-0-4-exec = freemind
+
+[module/flux]
+type = custom/script
+exec = echo %{F#ffa500}""
+#format-underline = #e8793e
+click-left = killall -s 6 xflux && xflux -l 55.7, -g 37.6 -k 3000
+click-right = killall -s 6 xflux && xflux -l 55.7, -g 37.6 -k 10000
+
+#[module/vpn]
+#type = custom/script
+##exec = protonvpn status
+#exec = ~/.config/polybar/scripts/vpn-openvpn-isrunning.sh
+#interval = 6
+#click-left = sudo protonvpn c -f
+#click-right = sudo protonvpn disconnect
+
+#[module/usd]
+#type = custom/script
+#exec = ~/.config/polybar/scripts/btc usd,eur,btc rub
+#interval = 6
+
+
+[module/updates-pacman-aurhelper]
+type = custom/script
+exec = ~/.config/polybar/scripts/updates-pacman-aurhelper.sh 
+interval = 600
+
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+mount-0 = /
+mount-1 = /home
+
+label-mounted = %{F#FFFF00}  %mountpoint%: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+#label-unmounted-foreground = ${colors.foreground-alt}
+#label-unmounted-underline = #ff0000
+#label-mounted-underline = #c38611
+
+
+[module/openweathermap-fullfeatured]
+type = custom/script
+exec = ~/.config/polybar/scripts/openweathermap-fullfeatured.sh
+interval = 600
+label-font = 3
+
+[settings]
+#Reload upon receiving XCB_RANDR_SCREEN_CHANGE_NOTIFY events
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+
+
+#Used for top and bottom aligned bars
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+
+
+#Requires polybar to be built with xcursor support (xcb-util-cursor)
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+
+
+#Currently supported WM's
+#wm-restack = bspwm
+wm-restack = i3
+
+
+#Tell the Window Manager not to configure the window.
+#Use this to detach the bar if your WM is locking its size/position.
+;override-redirect = true
+
+
+#Fallback click handlers that will be called if
+#there's no matching module handler found.
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+;vim:ft=dosini
+
+
+
+############################################################################################################
+#This module uses the i3 ipc to display information about workspaces and active mode.
+#Модуль для отображения информации о рабочих пространствах и активном режиме;
+#https://github.com/polybar/polybar/wiki!/Module:-i3
+
+
+[module/i3]
+type = internal/i3
+
+format = <label-state><label-mode>
+index-sort = true
+wrapping-scroll = false
+
+label-mode-padding = 1
+label-mode-foreground = #000
+label-mode-background = ${colors.primary}
+
+
+label-focused = %icon%
+#label-focused-background = 002873C0
+label-focused-foreground = ${colors.foreground}
+label-focused-padding = 1
+#label-focused-underline = 018BFF
+label-focused-overline = ${colors.foreground}
+
+
+label-unfocused = %icon%
+#label-unfocused-background = 00255498
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-padding = 1
+#label-unfocused-underline = 255498
+#label-unfocused-overline = ${colors.background}
+
+label-urgent = %icon%
+#label-urgent-background = ${colors.alert}
+label-urgent-foreground = ${colors.foreground}
+label-urgent-padding = 1
+#label-urgent-underline = ${colors.alert}
+#label-urgent-overline = ${colors.background}
+
+
+label-visible = %icon%
+#label-visible-background = ${colors.background}
+label-visible-foreground = ${colors.foreground}
+label-visible-padding = 1
+#label-visible-underline = ${colors.background}
+#label-visible-overline = ${colors.background}
+
+
+ws-icon-0 = 1;1
+ws-icon-1 = 2;2
+ws-icon-2 = 3;3
+ws-icon-3 = 4;4
+ws-icon-4 = 5;5
+ws-icon-5 = 6;6
+ws-icon-6 = 7;7
+ws-icon-7 = 8;8
+ws-icon-8 = 9;9
+ws-icon-9 = 10;10
+
+
+#Separator in between workspaces
+#label-separator = |
+
+
+############################################################################################################
+
+
+############################################################################################################
+#Модуль управления звуком через pulseaudio
+#https://github.com/polybar/polybar/wiki/Module:-pulseaudio
+
+
+[module/pulseaudio]
+type = internal/pulseaudio
+format-volume = <ramp-volume> <label-volume> 
+label-volume = %percentage%%
+label-volume-foreground = ${root.foreground}
+label-muted = %{F#ff0000}
+label-muted-foreground = #e8793e
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+
+############################################################################################################
+#модуль загрузки CPU
+#https://github.com/polybar/polybar/wiki/Module:-cpu
+
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+#format-overline = #408AB9
+#format-underline = #1ecb0b
+label = %{F#00FFFF}  CPU %percentage%% 
+
+
+############################################################################################################
+#Модуль отображения температуры core3
+#https://github.com/polybar/polybar/wiki/Module:-temperature
+
+
+[module/temperature_core3]
+type = internal/temperature
+thermal-zone = 0
+# при достижении критической отметки модуль меняет цвет на тот который мы зададим в label-warn
+warn-temperature = 65
+
+#путь к файлу отвечающему за температуру ядра
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp3_input
+
+label = %temperature-c%
+label-warn = %temperature-c%
+label-warn-foreground = #CA4E4E
+#format-overline = #DFC257
+#format-underline = #ff0000
+#format-warn-underline = #CA4E4E
+interval = 10
+
+format = <ramp> <label>
+format-warn = <ramp> <label-warn>
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+#ramp-foreground = #ff0000
+#ramp-foreground = #FBE191
+
+
+############################################################################################################
+#Модуль памяти ОЗУ
+#https://github.com/polybar/polybar/wiki/Module:-memory
+
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+#format-prefix-foreground = ${colors.foreground-alt}
+#format-overline = #61C07C
+#format-underline = #8d61ff
+label = %{F#00FFFF}  MEM %percentage_used%%
+
+
+
+
+############################################################################################################
+#Модуль раскладки клавиатуры
+#https://github.com/polybar/polybar/wiki/Module:-xkeyboard
+
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+label-NAME-maxlen = 10
+#format-prefix = ""
+#format-prefix-foreground = ${colors.foreground-alt}
+#format-prefix-overline = CF5E7F
+#format-prefix-underline = CF5E7F
+
+#label-layout =  %layout%
+#label-layout-overline = CF5E7F
+#label-layout-underline = CF5E7F
+
+#label-indicator-padding = 2
+#label-indicator-margin = 0
+#label-indicator-background = 2B7DBC
+#label-indicator-overline = 2B7DBC
+#label-indicator-underline = 2B7DBC
+#format-underline = #fff
+
+
+
+############################################################################################################
+#Модуль батарея
+
+[module/battery-combined-tlp]
+type = custom/script
+exec = ~/.config/polybar/scripts/battery-combined-tlp.sh
+interval = 10
+#label-underline = 2B7DBC
+
+
+############################################################################################################
+#Модуль календарь
+[module/popup-calendar]
+type = custom/script
+exec = ~/.config/polybar/scripts/popup-calendar.sh
+interval = 5
+click-left = ~/.config/polybar/scripts/popup-calendar.sh --popup &
+
+############################################################################################################
+#Модуль времени и даты
+#https://github.com/polybar/polybar/wiki/Module:-date
+
+
+[module/date]
+type = internal/date
+interval = 1
+dqate =
+time =%{F#E0D9FF} %H:%M:%S 
+
+#клик ЛКМ на время открывает дату
+date-alt =%{F#E0D9FF} %a %e %B %Y
+time-alt = %H:%M
+
+format-prefix = 
+#format-prefix-foreground = ${colors.foreground-alt}
+#format-overline = #7163AF
+#format-underline = #7163AF
+label = %date% %time%
+
+#Фон для модуля
+#format-background = #7163AF
+#format-foreground = #E0D9FF
