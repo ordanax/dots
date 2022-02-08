@@ -11,23 +11,21 @@
 #       ttf-font-awesome             #
 # https://fontawesome.com/cheatsheet #
 # sudo pacman -S ttf-font-awesome    #
-############################################################################################################
-#https://github.com/GhostKraft/i3gaps-config/tree/master/BlueZ-theme
+######################################
 
 [settings]
 pseudo-transparency = true
+
 #Цвета панели
 [colors]
-#foreground = #dfdfdf
 foreground = #00ff06
-background = #002145
-#background = #0021457A
+background = #aa2e3436
+
 background-alt = #1463B6
 foreground-alt = #568DDD
-primary = #2A76FF
+primary = #00FF00
 secondary = #218DC8
 alert = #bd2c40
-
 
 #размеры панели
 #указываем название бара к которому будет обрящаться скрипт автозапуска launch.sh в стоке [bar/название бара]
@@ -38,7 +36,7 @@ alert = #bd2c40
 width = 100%
 
 #высота панели 
-height = 15
+height = 20
 
  
 #offset-x = 1%
@@ -71,21 +69,18 @@ module-margin-right = 1
 
 
 #Шрифты
-font-0 = Iosevka Nerd Font:style=Medium:size=8;3
-font-1 = FontAwesome5Free:style=Solid:size=7.5;2.5
+font-0 = Iosevka Nerd Font:style=Medium:size=10;2.5
+font-1 = FontAwesome6Free:style=Solid:size=7.5;2.5
 font-2 = Weather Icons:size=7;2
-font-3 = FontAwesome5Brands:style=Solid:size=7.5;2.5
-
+font-3 = FontAwesome6Brands:style=Solid:size=7.5;2.5
 
 
 #######################################
 ## РАСПОЛОЖЕНИЕ И АКТИВАЦИЯ МОДУЛЕЙ  ##
 #######################################
-modules-left = i3 menu updates-pacman-aurhelper 
-modules-center = title openweathermap-fullfeatured
-modules-right = filesystem cpu memory temperature_core2 temperature_core3 pulseaudio flux  battery-combined-tlp xkeyboard powermenu popup-calendar
-
-
+modules-left = i3 menu updates-pacman-aurhelper usd 
+modules-center = title filesystem cpu memory temperature_core2 temperature_core3 
+modules-right = flux pulseaudio battery-combined-tlp xkeyboard powermenu popup-calendar
 
 #системный лоток расположение tray иконок none|right|center|left
 tray-position = right
@@ -105,19 +100,20 @@ type = custom/menu
 format-spacing = 2
 
 label-open = 
-#label-open-foreground = #dfecfa
-label-close = 
+label-open-foreground = #2E9EF4
+label-close =  
+label-close-foreground = #2E9EF4
 format-padding = 1
 
 label-separator = 𠘻
-#label-separator-foreground = #dfecfa
+label-separator-foreground = #dfecfa
 
 ### меню #######
 menu-0-0 = 
-menu-0-0-exec = libreoffice --calc /home/ordanax/MEGA/002_ADMIN/СТАТИСТИКА+ПРАЙС/ИСХОДЯЩИЙ.ods
+menu-0-0-exec = libreoffice --calc /home/ordanax/MEGA/000_ADMIN/ОТДЕЛЕНИЕ\ 1/СТАТИСТИКА+ПРАЙС/ИСХОДЯЩИЙ.ods
 
 menu-0-1 = 
-menu-0-1-exec = libreoffice --calc /home/ordanax/MEGA/002_ADMIN/АДМИН_ШКАЛА_ИМ.odt
+menu-0-1-exec = libreoffice --calc /home/ordanax/MEGA/000_ADMIN/ОТДЕЛЕНИЕ\ 7/000_АДМНШКАЛЫ/2021\ \-\ ПРОГРАММА.odt
 
 menu-0-2 = 
 menu-0-2-exec = todoist
@@ -125,34 +121,34 @@ menu-0-2-exec = todoist
 menu-0-3 =  
 menu-0-3-exec = galculator
 
-menu-0-4 = 
-menu-0-4-exec = gromit-mpx
+menu-0-4 = 
+menu-0-4-exec = freemind
 
 [module/flux]
 type = custom/script
-exec = echo ""
+exec = echo %{F#ffa500}""
 #format-underline = #e8793e
-click-left = killall -s 6 xflux && xflux -l 55.7, -g 37.6 -k 2000
+#format-overline = #d493bc
+click-left = killall -s 6 xflux && xflux -l 55.7, -g 37.6 -k 3000
 click-right = killall -s 6 xflux && xflux -l 55.7, -g 37.6 -k 10000
 
-#[module/vpn]
-#type = custom/script
-##exec = protonvpn status
-#exec = ~/.config/polybar/scripts/vpn-openvpn-isrunning.sh
-#interval = 6
-#click-left = sudo protonvpn c -f
-#click-right = sudo protonvpn disconnect
-
-#[module/usd]
-#type = custom/script
-#exec = ~/.config/polybar/scripts/btc usd,eur,btc rub
-#interval = 6
+[module/usd]
+type = custom/script
+exec = ~/.config/polybar/scripts/btc btc usd #usd,eur,
+interval = 6
 
 
 [module/updates-pacman-aurhelper]
 type = custom/script
 exec = ~/.config/polybar/scripts/updates-pacman-aurhelper.sh 
 interval = 600
+
+[module/vpn]
+type = custom/script
+exec = ~/.config/polybar/scripts/vpn-openvpn-isrunning.sh
+interval = 6
+click-left = sudo protonvpn c -f
+click-right = sudo protonvpn disconnect
 
 
 [module/filesystem]
@@ -161,18 +157,18 @@ interval = 25
 mount-0 = /
 mount-1 = /home
 
-label-mounted =  %mountpoint%: %percentage_used%%
+label-mounted = %{F#FFFF00} %mountpoint%: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 #label-unmounted-foreground = ${colors.foreground-alt}
 #label-unmounted-underline = #ff0000
 #label-mounted-underline = #c38611
+label-mounted-overline = #5E4BD8
 
-
-[module/openweathermap-fullfeatured]
-type = custom/script
-exec = ~/.config/polybar/scripts/openweathermap-fullfeatured.sh
-interval = 600
-label-font = 3
+#[module/openweathermap-fullfeatured]
+#type = custom/script
+#exec = ~/.config/polybar/scripts/openweathermap-fullfeatured.sh
+#interval = 600
+#label-font = 3
 
 [settings]
 #Reload upon receiving XCB_RANDR_SCREEN_CHANGE_NOTIFY events
@@ -236,7 +232,7 @@ label-mode-background = ${colors.primary}
 
 
 label-focused = %icon%
-label-focused-background = 002873C0
+#label-focused-background = 002873C0
 label-focused-foreground = ${colors.foreground}
 label-focused-padding = 1
 #label-focused-underline = 018BFF
@@ -244,14 +240,14 @@ label-focused-overline = ${colors.foreground}
 
 
 label-unfocused = %icon%
-label-unfocused-background = 00255498
+#label-unfocused-background = 00255498
 label-unfocused-foreground = ${colors.foreground}
 label-unfocused-padding = 1
 #label-unfocused-underline = 255498
 #label-unfocused-overline = ${colors.background}
 
 label-urgent = %icon%
-label-urgent-background = ${colors.alert}
+#label-urgent-background = ${colors.alert}
 label-urgent-foreground = ${colors.foreground}
 label-urgent-padding = 1
 #label-urgent-underline = ${colors.alert}
@@ -259,7 +255,7 @@ label-urgent-padding = 1
 
 
 label-visible = %icon%
-label-visible-background = ${colors.background}
+#label-visible-background = ${colors.background}
 label-visible-foreground = ${colors.foreground}
 label-visible-padding = 1
 #label-visible-underline = ${colors.background}
@@ -295,13 +291,14 @@ type = internal/pulseaudio
 format-volume = <ramp-volume> <label-volume> 
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
-label-muted = 
-label-muted-foreground = #e8793e
+label-muted = 
+#label-muted-foreground = #e8793e
+#label-volume-overline = #67b46c
 
-ramp-volume-0 = 
-ramp-volume-1 = 
+ramp-volume-0 = 
+ramp-volume-1 = 
 ramp-volume-2 = 
-ramp-volume-3 = 
+ramp-volume-3 = 
 ramp-volume-4 = 
 
 ############################################################################################################
@@ -314,7 +311,7 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-#format-overline = #408AB9
+format-overline = #BE2F33
 #format-underline = #1ecb0b
 label =  CPU %percentage%% 
 
@@ -336,7 +333,7 @@ hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp3_input
 label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = #CA4E4E
-#format-overline = #DFC257
+format-overline = #DFC257
 #format-underline = #ff0000
 #format-warn-underline = #CA4E4E
 interval = 10
@@ -361,6 +358,7 @@ interval = 2
 format-prefix = " "
 #format-prefix-foreground = ${colors.foreground-alt}
 #format-overline = #61C07C
+format-overline = #BE2F33
 #format-underline = #8d61ff
 label =  MEM %percentage_used%%
 
@@ -436,18 +434,3 @@ label = %date% %time%
 #Фон для модуля
 #format-background = #7163AF
 #format-foreground = #E0D9FF
-
-############################################################################################################
-
-Этот модуль показывает заголовок текущего окна.
-https://github.com/polybar/polybar/wiki/Module:-xwindow
-
-[module/title]
-#type = internal/xwindow
-#label = %{F#ABE0FF}%title:0:50:...%
-
-#[module/speedtest]
-#type = custom/script
-#exec = ~/.config/polybar/scripts/speedtest_api.py
-#tail = true
-#interval = 90
