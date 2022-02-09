@@ -78,9 +78,9 @@ font-3 = FontAwesome6Brands:style=Solid:size=7.5;2.5
 #######################################
 ## РАСПОЛОЖЕНИЕ И АКТИВАЦИЯ МОДУЛЕЙ  ##
 #######################################
-modules-left = i3 menu updates-pacman-aurhelper usd 
-modules-center = title filesystem cpu memory temperature_core2 temperature_core3 
-modules-right = flux pulseaudio battery-combined-tlp xkeyboard powermenu popup-calendar
+modules-left = i3 menu updates-pacman-aurhelper  
+modules-center = title usd
+modules-right = flux filesystem cpu memory temperature_core2 temperature_core3  pulseaudio battery-combined-tlp xkeyboard powermenu popup-calendar
 
 #системный лоток расположение tray иконок none|right|center|left
 tray-position = right
@@ -292,8 +292,8 @@ format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 label-muted = 
-#label-muted-foreground = #e8793e
-#label-volume-overline = #67b46c
+label-muted-foreground = be2f33
+label-volume-overline = 67b46c
 
 ramp-volume-0 = 
 ramp-volume-1 = 
