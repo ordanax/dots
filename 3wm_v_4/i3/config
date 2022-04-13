@@ -3,15 +3,21 @@ set $mod Mod4
 
 ### Автозапуск программ
 exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
-#exec --no-startup-id feh --bg-scale /usr/share/backgrounds/bg.jpg
+
+### Обои
+exec --no-startup-id feh --bg-scale /usr/share/backgrounds/bg.jpg
 #exec --no-startup-id feh --bg-scale /usr/share/backgrounds/bg-keyboard.png
-exec --no-startup-id feh --bg-scale /usr/share/backgrounds/gray_4.jpg
-exec --no-startup-id exec picom -b --backend glx --vsync --xrender-sync-fence --glx-no-rebind-pixmap --use-damage --glx-no-stencil
+#exec --no-startup-id feh --bg-scale /usr/share/backgrounds/gray_4.jpg
+#exec --no-startup-id feh --bg-scale /usr/share/backgrounds/2.png
+#exec --no-startup-id feh --bg-scale /usr/share/backgrounds/wallhaven-2.jpg
+
+### Убираем тиринг
+exec --no-startup-id picom -b --backend glx --xrender-sync-fence --glx-no-rebind-pixmap --use-damage --glx-no-stencil
 
 exec --no-startup-id xrandr --dpi 100
 exec --no-startup-id flameshot
 exec --no-startup-id sbxkb
-exec --no-startup-id xflux -l 55.7, -g 37.6 -k 2000
+exec --no-startup-id xflux -l 59.8952, -g 30.2690 -k 3000
 exec --no-startup-id megasync
 
 ### Отлючение заголовков
@@ -33,24 +39,29 @@ gaps inner 10
 #gaps outer 10
 
 #######################################################################
-# GUPS END 
+# GUPS END  
 #######################################################################
 
 ### Убить окно нажав средней кнопкой мыши на титульный заголовок окна
 bindsym --release button2 kill
 
-### Запуск программ
+### HOT KEYS - Запуск программ
 bindsym $mod+F1 exec --no-startup-id firefox; workspace 1
-bindsym $mod+F2 exec --no-startup-id pcmanfm
-bindsym $mod+F3 exec --no-startup-id subl3; workspace 3
-bindsym $mod+Ctrl+F3 exec --no-startup-id killall -s 6 subl3
+bindsym $mod+F2 exec --no-startup-id pcmanfm; workspace 2
+bindsym $mod+F3 exec --no-startup-id subl; workspace 3
+bindsym $mod+Ctrl+F3 exec --no-startup-id killall -s 6 subl
 bindsym $mod+F4 exec --no-startup-id cherrytree; workspace 4
-bindsym $mod+F5 exec --no-startup-id chromium; workspace 5
-bindsym $mod+F6 exec --no-startup-id caprine
+bindsym $mod+F6 exec --no-startup-id chromium; workspace 6
+bindsym $mod+F5 exec --no-startup-id vivaldi-stable; workspace 5
+bindsym $mod+x exec --no-startup-id xmind-2020; workspace 6
+bindsym $mod+k exec --no-startup-id kdenlive
 bindsym $mod+Ctrl+f exec --no-startup-id freemind; workspace 8
 bindsym $mod+Menu exec --no-startup-id trello; workspace 9
 bindsym Menu exec --no-startup-id todoist; workspace 10
+bindsym $mod+e exec --no-startup-id thunderbird; workspace 7
 bindsym $mod+v exec --no-startup-id wine /home/ordanax/.wine/dosdevices/c:/Program\ Files\ \(x86\)/VerseQ/VerseQ.exe
+bindsym $mod+p exec --no-startup-id ganttproject ~/MEGA/000_ADMIN/plan.gan
+#exec --no-startup-id shutdown -h 4:00
 
 
 bindsym $mod+t exec --no-startup-id telegram-desktop
@@ -60,6 +71,27 @@ bindsym $mod+c exec --no-startup-id libreoffice --calc
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+b exec --no-startup-id bleachbit
 bindsym $mod+g exec --no-startup-id goldendict
+bindsym $mod+o exec --no-startup-id obsidian-insider
+bindsym $mod+s exec --no-startup-id shotwell; workspace 10
+bindsym $mod+Ctrl+p exec --no-startup-id cd ~/Загрузки && python ~/MEGA/PYTHON/zen/img.py
+bindsym $mod+Ctrl+w exec --no-startup-id cd ~/Загрузки && python ~/MEGA/PYTHON/watermark/watermark.py
+
+
+### Перекидывает открытое окно на нужный рабочий стол
+for_window [class="subl"] move container to workspace $ws3
+for_window [class="gimp"] move container to workspace $ws5
+for_window [class="tor-browser"] move to workspace $ws0; workspace $ws0
+
+### Перекидывает открытое окно на нужный рабочий стол
+#assign [window_role="browser"] $ws1
+assign [title="(?i)pcmanfm"] $ws2
+assign [class="(?i)subl|thunar"] $ws3
+#assign [class="(?i)cherrytree"] $ws4
+assign [class="(?i)gimp"] $ws5
+#assign [class="(?i)telegram|discord"] $ws6
+#assign [class="(?i)chromium"] $ws8
+#assign [class="(?i)trello|todoist"] $ws9
+assign [class="(?i)trello|todoist|tor-browser"] $ws0
 
 ### vlc 
 bindsym Home exec --no-startup-id cvlc ~/Музыка/best.m3u
@@ -70,29 +102,16 @@ bindsym $mod+End exec --no-startup-id cvlc ~/Музыка/Vivaldi/
 bindsym XF86AudioStop exec --no-startup-id killall -s 6 vlc
 bindsym $mod+Prior exec --no-startup-id killall -s 6 vlc
 
-# Media player controls
-## bindsym XF86AudioPlay exec playerctl play
-## bindsym XF86AudioPause exec playerctl pause
+### Media player controls
+# bindsym XF86AudioPlay exec playerctl play
+# bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
-
-## Specific workspaces
-#assign [window_role="browser"] $ws1
-assign [window_role="gimp"] $ws5
-#assign [class="(?i)trello|todoist"] $ws10
-#assign [class="(?i)cherrytree"] $ws4
-#assign [class="(?i)chromium"] $ws8
-#assign [title="(?i)term-tiling"] $ws2
-#assign [class="(?i)subl3|thunar"] $ws3
-#assign [class="(?i)telegram|discord"] $ws6
-
-### Перекидывает открытое окно на нужный рабочий стол
-#for_window [class="todoist"] move to workspace $ws10
 
 ### Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
 for_window [class="Yad" title="yad-calendar"] floating enable
-#for_window [class="Xfce4-terminal"] floating enable
+#for_window [class="sakura"] floating enable
 
 ### Горячие клавиши
 bindsym $mod+q kill
@@ -117,7 +136,6 @@ bindsym $mod+0 workspace number $ws10
 
 
 ### Cпрятать окно, чтобы оно не мешалось, но в то же время было всегда под рукой. 
-### Можно добавить несколько окон и переключаться между ними. 
 bindsym $mod+Shift+Tab move scratchpad
 bindsym $mod+Tab scratchpad show, resize set 1366 750, move position center
 
@@ -125,7 +143,7 @@ font pango:monospace 8
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
-# Use pactl to adjust volume in PulseAudio.
+### Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
@@ -136,41 +154,41 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
-# Use Mouse+$mod to drag floating windows to their wanted position
+### Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start dmenu (a program launcher)
+### start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+### change focus
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+semicolon focus right
 
-# alternatively, you can use the cursor keys:
+### alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# move focused window
+### move focused window
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
 
-# alternatively, you can use the cursor keys:
+### alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# enter fullscreen mode for the focused container
+### enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 ### переключение между режимами отображения, окрытых окон
@@ -179,20 +197,20 @@ bindsym $mod+f fullscreen toggle
 # bindsym $mod+w layout tabbed
 # bindsym $mod+e layout toggle split
 
-# toggle tiling / floating
+### toggle tiling / floating
 bindsym $mod+space floating toggle
 
-# change focus between tiling / floating windows
+### change focus between tiling / floating windows
 #fbindsym $mod+Shift+space focuf mode_toggle
 
-# focus the parent container
+### focus the parent container
 bindsym $mod+a focus parent
 
-# focus the child container
+### focus the child container
 #bindsym $mod+d focus child
 
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
+### Define names for default workspaces for which we configure key bindings later on.
+### We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -204,7 +222,7 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-# move focused container to workspace
+### move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
@@ -252,11 +270,11 @@ bindsym $mod+Ctrl+Up resize grow height 10 px or 5 ppt
 bindsym $mod+Ctrl+Down resize shrink height 10 px or 5 ppt
 bindsym $mod+Ctrl+Left resize grow width 10 px or 5 ppt
 
-# reload the configuration file
+### reload the configuration file
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+### restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
+### exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
