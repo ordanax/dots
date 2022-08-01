@@ -14,6 +14,9 @@ exec --no-startup-id feh --bg-scale /usr/share/backgrounds/bg.jpg
 ### Убираем тиринг
 exec --no-startup-id picom -b --backend glx --xrender-sync-fence --glx-no-rebind-pixmap --use-damage --glx-no-stencil
 
+### Убираем отключение экрана
+exec --no-startup-id xset s off & xset -dpms &
+
 exec --no-startup-id xrandr --dpi 100
 exec --no-startup-id flameshot
 exec --no-startup-id sbxkb
@@ -48,7 +51,7 @@ bindsym --release button2 kill
 ### HOT KEYS - Запуск программ
 bindsym $mod+F1 exec --no-startup-id firefox; workspace 1
 bindsym $mod+F2 exec --no-startup-id pcmanfm; workspace 2
-bindsym $mod+F3 exec --no-startup-id subl; workspace 3
+bindsym $mod+F3 exec --no-startup-id subl
 bindsym $mod+Ctrl+F3 exec --no-startup-id killall -s 6 subl
 bindsym $mod+F4 exec --no-startup-id cherrytree; workspace 4
 bindsym $mod+F6 exec --no-startup-id chromium; workspace 6
@@ -73,19 +76,18 @@ bindsym $mod+b exec --no-startup-id bleachbit
 bindsym $mod+g exec --no-startup-id goldendict
 bindsym $mod+o exec --no-startup-id obsidian-insider
 bindsym $mod+s exec --no-startup-id shotwell; workspace 10
-bindsym $mod+Ctrl+p exec --no-startup-id cd ~/Загрузки && python ~/MEGA/PYTHON/zen/img.py
-bindsym $mod+Ctrl+w exec --no-startup-id cd ~/Загрузки && python ~/MEGA/PYTHON/watermark/watermark.py
+bindsym $mod+Ctrl+p exec --no-startup-id cd ~/Загрузки && python ~/MEGA/PYTHON/zen/img.py && python ~/MEGA/PYTHON/zen/unic.py && cd ~/Загрузки && python ~/MEGA/PYTHON/zen/watermark.py
+bindsym $mod+Ctrl+o exec --no-startup-id cd ~/Загрузки && python ~/MEGA/PYTHON/zen/unic.py && cd ~/Загрузки && python ~/MEGA/PYTHON/zen/watermark.py
 
 
 ### Перекидывает открытое окно на нужный рабочий стол
-for_window [class="subl"] move container to workspace $ws3
+# for_window [class="subl"] move container to workspace $ws3
 for_window [class="gimp"] move container to workspace $ws5
 for_window [class="tor-browser"] move to workspace $ws0; workspace $ws0
 
 ### Перекидывает открытое окно на нужный рабочий стол
 #assign [window_role="browser"] $ws1
 assign [title="(?i)pcmanfm"] $ws2
-assign [class="(?i)subl|thunar"] $ws3
 #assign [class="(?i)cherrytree"] $ws4
 assign [class="(?i)gimp"] $ws5
 #assign [class="(?i)telegram|discord"] $ws6
